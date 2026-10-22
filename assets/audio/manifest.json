@@ -1,0 +1,38 @@
+{
+  "music": {
+    "bgm": "Menu utama",
+    "bgm_explore": "Area 1-4",
+    "bgm_mystery": "Area 5-9",
+    "bgm_sky": "Area 10-13 dan ending",
+    "bgm_boss": "Pertarungan boss"
+  },
+  "effects": {
+    "hit": "Benturan panah/objek serta damage pemain, musuh, boss",
+    "block": "Panah memantul/perisai/kristal",
+    "bow": "Tembakan panah",
+    "sprout": "Tunas tumbuh",
+    "water": "Percikan, berenang dan mekanisme air",
+    "gate": "Gerbang terbuka",
+    "rope": "Tali terpasang/lepas dan mekanisme benang",
+    "bubble": "Gelembung muncul/pecah",
+    "land": "Mendarat/meraih tepian",
+    "jump": "Lompat biasa, ganda, jamur",
+    "poof": "Musuh/objek menghilang",
+    "boss": "Raungan/serangan besar boss",
+    "dash": "Dash",
+    "click": "Pilihan UI, dialog, ganti panah/kostum",
+    "checkpoint": "Aktivasi altar/sarang",
+    "pickup": "Koleksi/reward/puzzle selesai",
+    "ability": "Kemampuan/segel diperoleh",
+    "lock": "Kunci/mekanisme aktif",
+    "swish": "Hembusan, ayunan, perjalanan",
+    "deny": "Aksi ditolak/puzzle salah",
+    "bell": "Lonceng/resonansi",
+    "death": "Pemain mati",
+    "respawn": "Bangkit di checkpoint",
+    "win": "Boss kalah/ending",
+    "step": "Langkah berjalan/berlari",
+    "climb": "Memanjat tepian/tanaman",
+    "focus": "Mulai Sky Focus"
+  }
+}

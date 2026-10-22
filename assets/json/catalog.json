@@ -1,0 +1,865 @@
+{
+  "AERA_BASIC": {
+    "file": "aera_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "aera_basic-transparent.frames.json",
+    "sha256": "1b9420834523262994ba0ca523456b3cbaa24752452fe235d2785c7add45f40a"
+  },
+  "ENEMIES_A1": {
+    "file": "enemies_a1-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a1-transparent.frames.json",
+    "sha256": "868a8ad3526cfc232fc6d511e63cdd33cfdb4046f6522419e1e3e6e0d7872543"
+  },
+  "ENEMIES_A2": {
+    "file": "enemies_a2-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a2-transparent.frames.json",
+    "sha256": "e13d9c8746eaa2b11528298f443d9b8c551295ae6d1187f4e3b545d8d0c99074"
+  },
+  "ENEMIES_A3": {
+    "file": "enemies_a3-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a3-transparent.frames.json",
+    "sha256": "787e9069215456ea426c7713d5e64ccbdf76e56ddc9e15716fd00c7e5950f556"
+  },
+  "BOSS_MOSS": {
+    "file": "boss_moss-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_moss-transparent.frames.json",
+    "sha256": "ea7cf324eb008dd0a45d59d3dd812485f5d0403ac0977da8e90086f205d4ff58"
+  },
+  "BOSS_EAGLE": {
+    "file": "boss_eagle-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_eagle-transparent.frames.json",
+    "sha256": "a84ca7ff30d6cb263f6dbd1928a83a436087c84f32b03e764795f955f8091dcd"
+  },
+  "FX_A": {
+    "file": "fx_a-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "fx_a-transparent.frames.json",
+    "sha256": "e6a8b530503e9098fa1a16f09b85416b322a39b7c4523a093635f77e9d5cb59b"
+  },
+  "BOSS_CRAB": {
+    "file": "boss_crab-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_crab-transparent.frames.json",
+    "sha256": "c6119dd15de6cdd63ffb2f2550e62933bdfb2c2acb26f860a73b57e1387615d5"
+  },
+  "NPCS": {
+    "file": "npcs-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "npcs-transparent.frames.json",
+    "sha256": "62143d24c663df881c48e2725d1eb3e4f1ea341c9e66760ef1be4b66f56fc997"
+  },
+  "TEX_A1": {
+    "file": "tex_a1.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "41c64a26bc916dadbbc2a11c764eef3705cc35c9520013a961823a2c7adf2649"
+  },
+  "MECHANISMS": {
+    "file": "mechanisms-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "mechanisms-transparent.frames.json",
+    "sha256": "0aed87e6048f8a3ce573e6987b2a56f81aa4250b75b6bfaf9a520971c672f01b"
+  },
+  "FX_B": {
+    "file": "fx_b-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "fx_b-transparent.frames.json",
+    "sha256": "797529fdb1412ac298602a24ad648d85aab40676a5f3e455c0394adcda40d217"
+  },
+  "TEX_A2": {
+    "file": "tex_a2.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "9731c6f4ed1377c88728f8565ff044aa874559572c79719b18b65940e659f8b8"
+  },
+  "TEX_A3": {
+    "file": "tex_a3.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "436288d906759fdd0e30ebb0ac3005ae879f864d34f256674c7669cd84959d8e"
+  },
+  "PROPS_A": {
+    "file": "props_a-transparent.webp",
+    "width": 1584,
+    "height": 1584,
+    "sidecar": "props_a-transparent.frames.json",
+    "sha256": "f71a88512fa8e79a69c329a9fa24e421929d191742296ed7b84d33a168d5489c"
+  },
+  "BG_A1": {
+    "file": "bg_a1.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "d8097520808d1f7d042753d0af369437783d8739028d7c1f27ae8d36370a9590"
+  },
+  "BG_A2": {
+    "file": "bg_a2.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "cbc7f7aefdef2b699a6f1076ac981b371a3cac13763e009d09690b2194312c61"
+  },
+  "BG_A3": {
+    "file": "bg_a3.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1c70178ebf8c300570f5dab612e3cfe5f7c9832b76c50f44bd54173a8e22347e"
+  },
+  "PROPS_B": {
+    "file": "props_b-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "props_b-transparent.frames.json",
+    "sha256": "1d8478c44dc02177db55446628c78d0ed23aecc37751475d007150ab59270b3d"
+  },
+  "AERA_AIR": {
+    "file": "aera_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "aera_air-transparent.frames.json",
+    "sha256": "079e13ea1fab5aa6789d4f6face1116d23ee4be52cd631fe4dd95d174ffa6dfe"
+  },
+  "AERA_ACTION": {
+    "file": "aera_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "aera_action-transparent.frames.json",
+    "sha256": "15bbd71fc8ff4f00387fa2e3e7d5ab90ab168c435015bf47e403406334c98873"
+  },
+  "AERA_CLIMB": {
+    "file": "aera_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "aera_climb-transparent.frames.json",
+    "sha256": "09520b7f7ba9e08b860ad9157fd1ac459a688fdb159c096fd111fc1fbbbcfe8a"
+  },
+  "AERA_BOW": {
+    "file": "aera_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "aera_bow-transparent.frames.json",
+    "sha256": "3779fa191f7f238b506ba690f0ec55c3cff5ce3db0adb3445f047b3a16e11e46"
+  },
+  "AERA_MISC": {
+    "file": "aera_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "aera_misc-transparent.frames.json",
+    "sha256": "16bd34caab3e0294e25831a4da75c4015e59929e4879100c1108b98e8861e0a3"
+  },
+  "SKIN_RIMBA_BASIC": {
+    "file": "skin_rimba_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_rimba_basic-transparent.frames.json",
+    "sha256": "5048092487bdd7d1c2db306d377bc5af5a5128b146abebac8493a9c1b7113dc1"
+  },
+  "SKIN_RIMBA_AIR": {
+    "file": "skin_rimba_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_rimba_air-transparent.frames.json",
+    "sha256": "702d4312aedc78a4c7448f08106872d342fdac7a07d35e816b098f993563479f"
+  },
+  "SKIN_RIMBA_ACTION": {
+    "file": "skin_rimba_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_rimba_action-transparent.frames.json",
+    "sha256": "61cc859bc25d00803997e3a118b9b5646443ad1ab4d600353773393a6b54ed72"
+  },
+  "SKIN_RIMBA_CLIMB": {
+    "file": "skin_rimba_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_rimba_climb-transparent.frames.json",
+    "sha256": "de40baf8f6e27f7bf95bc00867b70435d95062dda96f3703e6a233bdf7f05d15"
+  },
+  "SKIN_RIMBA_MISC": {
+    "file": "skin_rimba_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_rimba_misc-transparent.frames.json",
+    "sha256": "dbd968dc493864d32b0d485c467c2b5b45663a5462cc1c211b4e4d0e5dc0c628"
+  },
+  "SKIN_SALJU_BASIC": {
+    "file": "skin_salju_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_salju_basic-transparent.frames.json",
+    "sha256": "b1f65d573414ef59f7d6e1dd416a3f7332af4202f6b707d754f012cee88c9267"
+  },
+  "SKIN_SALJU_ACTION": {
+    "file": "skin_salju_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_salju_action-transparent.frames.json",
+    "sha256": "f77a50580af4c09c6f8466b28d49c0af6f7a1b2ba0ebe568728aa0e67a61d47e"
+  },
+  "SKIN_RIMBA_BOW": {
+    "file": "skin_rimba_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_rimba_bow-transparent.frames.json",
+    "sha256": "58392e6a029b27c237809f40b29405822a6eba021e4f8d9b279d53e9c241a0f2"
+  },
+  "SKIN_SALJU_AIR": {
+    "file": "skin_salju_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_salju_air-transparent.frames.json",
+    "sha256": "0a7d9754c70d9dfe464d325b381ae71b6f986422c434a7b7b22094654a8d1f73"
+  },
+  "SKIN_SENJA_BASIC": {
+    "file": "skin_senja_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_senja_basic-transparent.frames.json",
+    "sha256": "2633e750924a7a629b285ce2d2ff913a56368e8b6e2112fd95a57417988af9d9"
+  },
+  "SKIN_SALJU_CLIMB": {
+    "file": "skin_salju_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_salju_climb-transparent.frames.json",
+    "sha256": "3557ded866857bf2bd66b17adf3d7fa3a7b411a4d41b2e178a8be9e7fa91a3b3"
+  },
+  "SKIN_SENJA_CLIMB": {
+    "file": "skin_senja_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_senja_climb-transparent.frames.json",
+    "sha256": "e3c7cf9b3208b14ca6b3b2fba5a99006c962e5da02c4d67c9b233b6a4269c704"
+  },
+  "SKIN_SALJU_MISC": {
+    "file": "skin_salju_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_salju_misc-transparent.frames.json",
+    "sha256": "5c9975fdc260db8093507a9e723bb55a38a4fe9531f5e5e300c80672d9c257ff"
+  },
+  "SKIN_SENJA_MISC": {
+    "file": "skin_senja_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_senja_misc-transparent.frames.json",
+    "sha256": "0f7ccdc9af8bd46a458e54d3118145e8edd7572722945ae92b1f275fc2f6e2b0"
+  },
+  "SKIN_SALJU_BOW": {
+    "file": "skin_salju_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_salju_bow-transparent.frames.json",
+    "sha256": "fdf5751b369668ba883cbc9e0cfea64bfa8d01ebd2b1b987e6d76ffbb7d23287"
+  },
+  "SKIN_SENJA_ACTION": {
+    "file": "skin_senja_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_senja_action-transparent.frames.json",
+    "sha256": "be921fb17c4598c3b0985439872aafbac60659930973a806a4d10e63bace37e3"
+  },
+  "SKIN_SENJA_AIR": {
+    "file": "skin_senja_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_senja_air-transparent.frames.json",
+    "sha256": "1273f747cf530301299b8ee22a47045692311e7c9d323185d51aaa9321a66616"
+  },
+  "SKIN_BARA_MISC": {
+    "file": "skin_bara_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bara_misc-transparent.frames.json",
+    "sha256": "20191045f66c9d0d2d99057cbb964311136521302ec22a430ed96485aaecb10e"
+  },
+  "SKIN_BARA_BASIC": {
+    "file": "skin_bara_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bara_basic-transparent.frames.json",
+    "sha256": "d1561afcf7d55fe3394f2efaa9d69f374d8749300e200ebd66b3006c6e314028"
+  },
+  "SKIN_BARA_BOW": {
+    "file": "skin_bara_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bara_bow-transparent.frames.json",
+    "sha256": "514c277f8928b6ef3c96de9f6f7feb2972f1de9527da1c99e91642c0da657eac"
+  },
+  "SKIN_BARA_AIR": {
+    "file": "skin_bara_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bara_air-transparent.frames.json",
+    "sha256": "03d8228f16b0dedefe954bd1d8335ff35e447c272a50bdf4a5133bbd4705688e"
+  },
+  "SKIN_BARA_CLIMB": {
+    "file": "skin_bara_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bara_climb-transparent.frames.json",
+    "sha256": "e762d87f73b620787e01568722f78aba7975347bbf95330d9660272e11529ad6"
+  },
+  "SKIN_SENJA_BOW": {
+    "file": "skin_senja_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_senja_bow-transparent.frames.json",
+    "sha256": "4c1013fa39cdd03b3b0598a474c8470213369fc6e879674a1476c62dfe714c5f"
+  },
+  "SKIN_BARA_ACTION": {
+    "file": "skin_bara_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bara_action-transparent.frames.json",
+    "sha256": "ed58867692b182990511fb7e7d2fac3bfdc45e2673244eb37e467411b12771d4"
+  },
+  "SKIN_SAMUDRA_BASIC": {
+    "file": "skin_samudra_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_samudra_basic-transparent.frames.json",
+    "sha256": "4027812fd0615ec73f9b51ec712c46f18d083161ecc006f042e6e5ef769d1283"
+  },
+  "SKIN_SAMUDRA_AIR": {
+    "file": "skin_samudra_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_samudra_air-transparent.frames.json",
+    "sha256": "5d27b49f7739a4b4f39e58c65054ff3055c3f256bdf2c7ce35ccb3043295775d"
+  },
+  "SKIN_SAMUDRA_ACTION": {
+    "file": "skin_samudra_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_samudra_action-transparent.frames.json",
+    "sha256": "c2e92c06c4555104ab04886b3336094f4864359c9a6f79f85f7ce2ba8f48f3f2"
+  },
+  "SKIN_SAMUDRA_CLIMB": {
+    "file": "skin_samudra_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_samudra_climb-transparent.frames.json",
+    "sha256": "a34169958b1db8b1037d435dee004c7323b0c1f8cda705c2081d7f840d25dae6"
+  },
+  "SKIN_SAMUDRA_BOW": {
+    "file": "skin_samudra_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_samudra_bow-transparent.frames.json",
+    "sha256": "5b1badbc5d19f8e4ed7bd7a6680dd9a13eabaa701868ba4efe065554a96d1b02"
+  },
+  "SKIN_SAMUDRA_MISC": {
+    "file": "skin_samudra_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_samudra_misc-transparent.frames.json",
+    "sha256": "3d8015c99f536908d4a745b17d0efc8e56f5be08d474a7ea285b12c8d016fec2"
+  },
+  "SKIN_SAKURA_CLIMB": {
+    "file": "skin_sakura_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_sakura_climb-transparent.frames.json",
+    "sha256": "02dba76ba70062a3dae3720e1a0f123480a7afda8f2bec8ee83349bb9451ae05"
+  },
+  "SKIN_SAKURA_ACTION": {
+    "file": "skin_sakura_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_sakura_action-transparent.frames.json",
+    "sha256": "c2f9402f6ed3118aab8925db7c6fa8c588e9d61f44c07014cc83036ca392af72"
+  },
+  "SKIN_SAKURA_MISC": {
+    "file": "skin_sakura_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_sakura_misc-transparent.frames.json",
+    "sha256": "f2fba3b7e378ec211e5c2db05fae4f40931aa6df385539ec4e3c83dbaedae244"
+  },
+  "SKIN_BINTANG_CLIMB": {
+    "file": "skin_bintang_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bintang_climb-transparent.frames.json",
+    "sha256": "6831948b7608be854027ced3ea2dcf222097f5a69657bc605ed29175322d6cea"
+  },
+  "SKIN_SAKURA_AIR": {
+    "file": "skin_sakura_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_sakura_air-transparent.frames.json",
+    "sha256": "2a4cf7df00442c109ead3a0f5b8ee2f32f42e7310346c75741f0949d20010d43"
+  },
+  "SKIN_SAKURA_BASIC": {
+    "file": "skin_sakura_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_sakura_basic-transparent.frames.json",
+    "sha256": "ec96bc37b156caa81a2d804690eef67f47da1b5bfa23ad7e88e3293410f68c5c"
+  },
+  "SKIN_BINTANG_MISC": {
+    "file": "skin_bintang_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bintang_misc-transparent.frames.json",
+    "sha256": "bc378cae56f52d7adb6f73f5bca3a714db954a076558da13f620eb6e402b1468"
+  },
+  "SKIN_BINTANG_BASIC": {
+    "file": "skin_bintang_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bintang_basic-transparent.frames.json",
+    "sha256": "39f1253a5acf6350a888aac0f0736054b5437d5b1675822a1f800769ba1cdb33"
+  },
+  "SKIN_BINTANG_AIR": {
+    "file": "skin_bintang_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bintang_air-transparent.frames.json",
+    "sha256": "785ba03590ccb70d3f81a56e171fc587b657d79215722686f04d0edccfce2cf0"
+  },
+  "SKIN_SAKURA_BOW": {
+    "file": "skin_sakura_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_sakura_bow-transparent.frames.json",
+    "sha256": "bf45d5e02421f1ee8e2eb4b25f4849b7eac5ad86886420132ef092ad300ad12a"
+  },
+  "SKIN_BINTANG_ACTION": {
+    "file": "skin_bintang_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bintang_action-transparent.frames.json",
+    "sha256": "159bd13acfeced4fa4bbaf65058af19c6c274216c73574f92406c15278766fb3"
+  },
+  "SKIN_BINTANG_BOW": {
+    "file": "skin_bintang_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bintang_bow-transparent.frames.json",
+    "sha256": "4a639caae89e5cfc677d94595f124f620e9842bebfc257f88700ab071fca87d4"
+  },
+  "SKIN_MENTARI_BASIC": {
+    "file": "skin_mentari_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_mentari_basic-transparent.frames.json",
+    "sha256": "3c7b321ee1745133adf415ed376e2e6201b7ce095dd800fdaebf39b5f4ecda2f"
+  },
+  "SKIN_MENTARI_AIR": {
+    "file": "skin_mentari_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_mentari_air-transparent.frames.json",
+    "sha256": "cf6c397779e72c6b6298c4103d511d45c6bf30e39e8d4f0dc9dea64a22bccaff"
+  },
+  "SKIN_MENTARI_ACTION": {
+    "file": "skin_mentari_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_mentari_action-transparent.frames.json",
+    "sha256": "74a899814b2bf5b3be01b971b7b0437692ec49afe4c7bbc219a9995213bb9256"
+  },
+  "SKIN_MENTARI_CLIMB": {
+    "file": "skin_mentari_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_mentari_climb-transparent.frames.json",
+    "sha256": "554933e0095227d070e057c718caf798c1d20d79509565957b42aeb171c51353"
+  },
+  "SKIN_MENTARI_BOW": {
+    "file": "skin_mentari_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_mentari_bow-transparent.frames.json",
+    "sha256": "5dbaea6e67a282b0c19d1893e044132bd8990e007f266b77422bc99de55254b8"
+  },
+  "SKIN_MENTARI_MISC": {
+    "file": "skin_mentari_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_mentari_misc-transparent.frames.json",
+    "sha256": "8bc9773d5c7b92cb715c7a16d3070e822aa810ef38ef2a74c8725c7d6a6cd506"
+  },
+  "SKIN_PERI_BASIC": {
+    "file": "skin_peri_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_peri_basic-transparent.frames.json",
+    "sha256": "b9a5526167e07a3f71fa44e6c09eb76a958f4f349d407ac3e1fa427851d5ce7c"
+  },
+  "SKIN_PERI_AIR": {
+    "file": "skin_peri_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_peri_air-transparent.frames.json",
+    "sha256": "b83aa793bf678c026c2c19c3b4784e6994c9362eb7a4dad3c7d6487cca90da51"
+  },
+  "SKIN_PERI_ACTION": {
+    "file": "skin_peri_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_peri_action-transparent.frames.json",
+    "sha256": "ba657cd21dc4aa686968bcfd595ac2b5c13d0934e65db497d95b1a5a04083a52"
+  },
+  "SKIN_PERI_BOW": {
+    "file": "skin_peri_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_peri_bow-transparent.frames.json",
+    "sha256": "938c20a384a930ccec4e27a6bdab173225d913f3e9116722963883c01ae16b25"
+  },
+  "SKIN_PERI_MISC": {
+    "file": "skin_peri_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_peri_misc-transparent.frames.json",
+    "sha256": "a4c090794d32140d4a5fdce94c2bf47b8326724de9cf80cd96b71f9d4c50bfda"
+  },
+  "SKIN_BAYANGAN_BOW": {
+    "file": "skin_bayangan_bow-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bayangan_bow-transparent.frames.json",
+    "sha256": "e0646480df8b3cdbfb14636fa98ae8d372dafcaa9d7e3708ff9850d482e66c6a"
+  },
+  "SKIN_BAYANGAN_BASIC": {
+    "file": "skin_bayangan_basic-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bayangan_basic-transparent.frames.json",
+    "sha256": "df6ffcc31f279577a33c7854a1f9ffc0f952f409532d6af722c1a9f08ee880d5"
+  },
+  "SKIN_BAYANGAN_MISC": {
+    "file": "skin_bayangan_misc-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bayangan_misc-transparent.frames.json",
+    "sha256": "5e6aa2db4bf711b279f4d073f8b27480db870e003d654c8617a0e077f2d006e3"
+  },
+  "SKIN_BAYANGAN_AIR": {
+    "file": "skin_bayangan_air-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bayangan_air-transparent.frames.json",
+    "sha256": "d7a0486a7a9352fb21dc406d0bfdb11536204ca28a5e545a38c7ae9943ee8172"
+  },
+  "SKIN_BAYANGAN_CLIMB": {
+    "file": "skin_bayangan_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bayangan_climb-transparent.frames.json",
+    "sha256": "6c503bdc4bbd0c81acf5d25e15db47be51d5832fc7716b1fde77c2d0d1b16f1f"
+  },
+  "SKIN_BAYANGAN_ACTION": {
+    "file": "skin_bayangan_action-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_bayangan_action-transparent.frames.json",
+    "sha256": "73db743996051ad0dee4acebc780eb9522f67a8208c29af4847ff4e7062b8ae0"
+  },
+  "SKIN_PERI_CLIMB": {
+    "file": "skin_peri_climb-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "skin_peri_climb-transparent.frames.json",
+    "sha256": "ba8fa27c7e7a4a1ac91052f4bdd9223fad3495b3b5e1fe1c0e9af725449b0169"
+  },
+  "ENEMIES_A4": {
+    "file": "enemies_a4-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a4-transparent.frames.json",
+    "sha256": "5b502b7a15bdd4e0f9a2d404b17bc2dc6cf762dffc4f569d1f615de4f33fca94"
+  },
+  "ENEMIES_A6": {
+    "file": "enemies_a6-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a6-transparent.frames.json",
+    "sha256": "5129ca4691d1577015e9142703ff226a0386582c85033a7e51a59178f401f608"
+  },
+  "ENEMIES_A5": {
+    "file": "enemies_a5-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a5-transparent.frames.json",
+    "sha256": "b737ade454b7a1c3a9f21e597347e5f41ce18a30c79238aa4515fc0237b17d8e"
+  },
+  "ENEMIES_A9": {
+    "file": "enemies_a9-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a9-transparent.frames.json",
+    "sha256": "5b531cb31b248c4737b282758f344d10c8f96b423484155870b73dc2453537b0"
+  },
+  "ENEMIES_A7": {
+    "file": "enemies_a7-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a7-transparent.frames.json",
+    "sha256": "303871e8e339e4b0c741dac5b643bafb0ba43d473f62965ee1bcff0967b133e6"
+  },
+  "ENEMIES_A8": {
+    "file": "enemies_a8-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a8-transparent.frames.json",
+    "sha256": "48b169c1f78c3fb54054cfd59fd0d4e9b04a65bd3eec1299f55a91cf52edfc8e"
+  },
+  "ENEMIES_A11": {
+    "file": "enemies_a11-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a11-transparent.frames.json",
+    "sha256": "b7095dd96528414b35517f494de4e585cd5e572c4f2e355085173e859d8e732a"
+  },
+  "BOSS_MIRROR": {
+    "file": "boss_mirror-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_mirror-transparent.frames.json",
+    "sha256": "6cbf82aa33c94cd17f325486c9775686b8f73521ddde5ea558a0294f95c306b3"
+  },
+  "ENEMIES_A10": {
+    "file": "enemies_a10-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a10-transparent.frames.json",
+    "sha256": "c8890d62d6f6b9fbdacf22275fdf1d75ea40d11c061de55df1edb8e8d9650cbe"
+  },
+  "BOSS_STAG": {
+    "file": "boss_stag-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_stag-transparent.frames.json",
+    "sha256": "71db5a8dbbc651f9be809b52d42c14b9463be7403aaf6aaa9d244b8e31fbb324"
+  },
+  "ENEMIES_A13": {
+    "file": "enemies_a13-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a13-transparent.frames.json",
+    "sha256": "5bd5105a444dedde10c0b9c2ab6290343e48adfb99f109886277b4199c4cf53f"
+  },
+  "BOSS_GOLEM": {
+    "file": "boss_golem-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_golem-transparent.frames.json",
+    "sha256": "da30599edd955a8632d8ef9bccc1683112e4f394763661aeee8dc9e1f8e61408"
+  },
+  "ENEMIES_A12": {
+    "file": "enemies_a12-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "enemies_a12-transparent.frames.json",
+    "sha256": "2926651989ad90774981f4910e36e8bd859abc8bd84a500064b25050084e0268"
+  },
+  "BOSS_DRAGON": {
+    "file": "boss_dragon-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_dragon-transparent.frames.json",
+    "sha256": "11dfadbcb39f4f760e61fae45cee9a01ed40a843c25cd770580519fae3c157e6"
+  },
+  "GATES_C": {
+    "file": "gates_c-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "gates_c-transparent.frames.json",
+    "sha256": "f9aa236733a2e5465c4db4ada23b547c1e5dbf1ac0633698b9a2702d9debcc2c"
+  },
+  "FX_C": {
+    "file": "fx_c-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "fx_c-transparent.frames.json",
+    "sha256": "3f769b6390fcfc7af179a3ddae71e64dbb947808ead01e93fee9680fcc54a3a5"
+  },
+  "NPCS_C": {
+    "file": "npcs_c-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "npcs_c-transparent.frames.json",
+    "sha256": "a4f97e5cdb9d3a4399b001974419458fcd8e373964c81e0844cc1a9b68f953ac"
+  },
+  "PROPS_C": {
+    "file": "props_c-transparent.webp",
+    "width": 1584,
+    "height": 1584,
+    "sidecar": "props_c-transparent.frames.json",
+    "sha256": "15f3fb828d0472ff43ca3817aeb04836c10ea258913e763fa1fafda443f12f2e"
+  },
+  "PROPS_E": {
+    "file": "props_e-transparent.webp",
+    "width": 1584,
+    "height": 1200,
+    "sidecar": "props_e-transparent.frames.json",
+    "sha256": "d8466f4b8f933b883d49b475e2103ed1f3dfd4deb2c206250168f1eb9155661b"
+  },
+  "NPCS_B": {
+    "file": "npcs_b-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "npcs_b-transparent.frames.json",
+    "sha256": "6a864bcdfa654e4fe9e51ce3d50804e5e929dc93cabaccb8c753aff51ddb6559"
+  },
+  "GATES_B": {
+    "file": "gates_b-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "gates_b-transparent.frames.json",
+    "sha256": "92af7a0666d0f7ab8c20070751a9c1c7625a40f239233b5e1c9b20d0c008b7ee"
+  },
+  "PROPS_D": {
+    "file": "props_d-transparent.webp",
+    "width": 1584,
+    "height": 1584,
+    "sidecar": "props_d-transparent.frames.json",
+    "sha256": "c046c741cfbbf1cf9d3a1bd1174a95f37a399db15c9884d2a91d17fe852e4975"
+  },
+  "BOSS_CROWN": {
+    "file": "boss_crown-transparent.webp",
+    "width": 1968,
+    "height": 1584,
+    "sidecar": "boss_crown-transparent.frames.json",
+    "sha256": "c1ce59845ed97a321e3c5971e72e1c5570c812db5852ba4f96b367d103183b16"
+  },
+  "BG_A4": {
+    "file": "bg_a4.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "c8bb22863a4c9b08bf1673be0caa6e9d181463bceca20f6c1cad573caac3f78a"
+  },
+  "BG_A5": {
+    "file": "bg_a5.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "256f94c227e39d6e3cb21ab4751727b0441b7efcc969184fc6f18d1d8d3ee621"
+  },
+  "BG_A6": {
+    "file": "bg_a6.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "f8322bfd85ee061316a6a717146459c88ff04058b976002eae382dbab629d22f"
+  },
+  "BG_A7": {
+    "file": "bg_a7.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "0a0fa5ccea1763602ccb78846d80dc1e8ac1299eb2dcfa095dc486b901b73685"
+  },
+  "BG_A8": {
+    "file": "bg_a8.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "32c99c7cd93427ab1f773cc2ae56596bb5b1b5d3a14fad20c1db0dfeadebf1cf"
+  },
+  "BG_A10": {
+    "file": "bg_a10.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1c3bcb1b91df3b91fcb02e53252fba4b32eb972fb37249cd1e8bba13e00a7312"
+  },
+  "BG_A9": {
+    "file": "bg_a9.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "9ef71b43552ba69bb577470ce760a64ce486d6b6af42d6dbfedc1745429b5030"
+  },
+  "BG_A12": {
+    "file": "bg_a12.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "30c54d3f5144ef786ff431861eb5d3dbcd3c235eba51904015ee9f62843ea94d"
+  },
+  "BG_A11": {
+    "file": "bg_a11.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1ec0fe1781c991fec23f63eaa7bd03a08d5fbd44c475234769a0c055cca0458c"
+  },
+  "TEX_A5": {
+    "file": "tex_a5.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "410faafb241ed6de32d01e087b7b03576cd20b0bfd2969bfdf60208823ebe140"
+  },
+  "BG_A13": {
+    "file": "bg_a13.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "3f898da70afb3c0de8807aadcb63dcdb08c1eacfe9807ab250dbf47d32763036"
+  },
+  "TEX_A7": {
+    "file": "tex_a7.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "994edf9873a59677653bf3754a35bca2f128b561f2e9de615df34d4e5d4e695c"
+  },
+  "TEX_A4": {
+    "file": "tex_a4.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "d2b88d808b6fa910d99ab3b81c763c9e18df2ff41cda4304815afec49c87de00"
+  },
+  "TEX_A8": {
+    "file": "tex_a8.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "35f25dfc1e521aed0de202547e38ab2f1731eab6e66d4129ee85b4f9bd703287"
+  },
+  "TEX_A6": {
+    "file": "tex_a6.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "8c2e8fcb76063f9225cfc16be56a47a67581970712f693891673de88a1ed0f91"
+  },
+  "TEX_A12": {
+    "file": "tex_a12.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "8d67aef2795927330cd98fed3ed962aabb3eeb73e9389527284d36cc66056e03"
+  },
+  "TEX_A10": {
+    "file": "tex_a10.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "071403e5a63bdc40698203483642b311174da93dcb3a9768877827b4a5d55edc"
+  },
+  "TEX_A11": {
+    "file": "tex_a11.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "cbb0cd5ee246bc977a504318e0f30648738cfe84f65a0bfbdc0018b595c0c686"
+  },
+  "TEX_A9": {
+    "file": "tex_a9.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "cfbee87ba25e866fa52a0e3a0c39a0fe7804c0a57e2beff81fda99df9de61bfb"
+  },
+  "TEX_A13": {
+    "file": "tex_a13.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "5edb9f03e8775aedd1703e4160db7ec239e2009ade97484ac5ab9e6a0a865d66"
+  }
+}

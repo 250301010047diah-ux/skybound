@@ -1,0 +1,2525 @@
+{
+  "AERA_BASIC": {
+    "src": "/generated-assets/aera_basic-transparent.webp",
+    "kind": "image",
+    "label": "Aera — gerak dasar",
+    "recipe": {
+      "prompt": "Use case: player character animation sheet for a side-view 2D action platformer.\nSubject: Aera, a young girl archer with chibi proportions (head about one third of body height), orange-red hood and short red cape, brown hair with bangs, big expressive eyes, brown leather tunic and belt, quiver of green-fletched arrows on her back, brown boots, wooden recurve bow held in her left hand. Full body, side view, facing right, same character, same size and same foot line in every frame.\nRows: idle = gentle breathing loop, cape sways slightly, bow held low; walk = calm walk cycle, 5 evenly spaced poses, last frame leads back into the first; run = energetic run cycle with leaning forward, cape flowing behind, 5 poses looping; turn = quick skid-and-turn: frame 1 facing right braking, frame 3 body twisting toward the camera, frame 5 nearly facing left.\nStyle: bold 2D cartoon exactly like the reference, thick dark-brown outlines, two-tone cel shading, warm saturated colors, crisp HD rendering.\nAvoid: background scenery, ground shadows, text, weapons other than the bow, changes in outfit or proportions between frames, cropped limbs.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "idle",
+            "frames": 5
+          },
+          {
+            "name": "walk",
+            "frames": 5
+          },
+          {
+            "name": "run",
+            "frames": 5
+          },
+          {
+            "name": "turn",
+            "frames": 5
+          }
+        ],
+        "facing": "right",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A1": {
+    "src": "/generated-assets/enemies_a1-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Lembah Akar",
+    "recipe": {
+      "prompt": "Use case: enemy animation sheet for a side-view 2D platformer, enemies face left toward the player.\nSubject: slime = round lime-green moss slime with tiny leaf sprouts on top and two big white eyes, squash-and-stretch hop cycle (squash, launch, airborne stretched, falling, landing squash); slime_attack = same slime puffing up then lunging forward with an angry face; beetle = small round brown-and-gold shelled beetle with stubby legs and short horn, walking cycle; beetle_attack = same beetle lowering its horn and charging with motion lines.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright saturated colors, crisp HD.\nComposition: each creature centered with feet on the same baseline in every frame of its rows, consistent size per creature.\nAvoid: background, ground, text, shadows.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "slime",
+            "frames": 5
+          },
+          {
+            "name": "slime_attack",
+            "frames": 5
+          },
+          {
+            "name": "beetle",
+            "frames": 5
+          },
+          {
+            "name": "beetle_attack",
+            "frames": 5
+          }
+        ],
+        "facing": "left",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A2": {
+    "src": "/generated-assets/enemies_a2-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Kanopi",
+    "recipe": {
+      "prompt": "Use case: enemy animation sheet for a side-view 2D platformer, enemies face left.\nSubject: swooper = plump teal-blue swooping bird with orange beak and angry brow, wing-flapping hover loop; swooper_dive = same bird tucking wings and diving diagonally down-left, beak open screeching; sentry = twig sentry, a small stump creature made of twisted branches with a single glowing yellow eye and leafy crown, idle sway loop; sentry_shoot = same stump rearing back then spitting a sharp thorn forward to the left.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright saturated colors, crisp HD.\nComposition: each creature centered, consistent size per creature across its rows.\nAvoid: background, text, shadows.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "swooper",
+            "frames": 5
+          },
+          {
+            "name": "swooper_dive",
+            "frames": 5
+          },
+          {
+            "name": "sentry",
+            "frames": 5
+          },
+          {
+            "name": "sentry_shoot",
+            "frames": 5
+          }
+        ],
+        "facing": "left",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A3": {
+    "src": "/generated-assets/enemies_a3-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Kota Air",
+    "recipe": {
+      "prompt": "Use case: enemy animation sheet for a side-view 2D platformer, enemies face left.\nSubject: crab = coral-red guard crab with a big stone-plated shield claw held in front, sideways scuttle walk loop; crab_attack = same crab raising the shield claw high and slamming it down; bubbler = small teal frog-like water creature with a fin crest holding a tiny shell bow, idle bob loop; bubbler_shoot = same creature drawing and releasing a round soap-like bubble forward to the left.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright saturated colors, crisp HD.\nComposition: each creature centered with feet on a consistent baseline, consistent size per creature.\nAvoid: background, water, text, shadows.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "crab",
+            "frames": 5
+          },
+          {
+            "name": "crab_attack",
+            "frames": 5
+          },
+          {
+            "name": "bubbler",
+            "frames": 5
+          },
+          {
+            "name": "bubbler_shoot",
+            "frames": 5
+          }
+        ],
+        "facing": "left",
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_MOSS": {
+    "src": "/generated-assets/boss_moss-transparent.webp",
+    "kind": "image",
+    "label": "Boss Induk Lumut",
+    "recipe": {
+      "prompt": "Use case: boss animation sheet for a side-view 2D platformer, boss faces left.\nSubject: Induk Lumut, a huge mother moss slime, dome-shaped lime and deep green jelly body with moss carpet, mushrooms and small ferns growing on top, a flower crown, two large stern eyes and a wide mouth. idle = wobbling breathing loop; attack = squash down low then leap upward stretched tall, mouth open; hurt = flinching, eyes squeezed shut, body dented and flashing; defeat = melting and shrinking into a small puddle with a sprout.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright saturated colors, crisp HD.\nComposition: boss centered, bottom resting on the same baseline in every frame, same scale.\nAvoid: background, ground, text, shadows.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "idle",
+            "frames": 5
+          },
+          {
+            "name": "attack",
+            "frames": 5
+          },
+          {
+            "name": "hurt",
+            "frames": 5
+          },
+          {
+            "name": "defeat",
+            "frames": 5
+          }
+        ],
+        "facing": "left",
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_EAGLE": {
+    "src": "/generated-assets/boss_eagle-transparent.webp",
+    "kind": "image",
+    "label": "Boss Elang Ranting",
+    "recipe": {
+      "prompt": "Use case: miniboss animation sheet for a side-view 2D platformer, boss faces left.\nSubject: Elang Ranting, a large eagle whose wings and tail are woven from twigs and green leaves, golden-brown feathers on its chest, hooked yellow beak, fierce amber eyes, a crest of leafy sticks. idle = flying hover loop with big wing flaps; attack = wings folding back into a steep diving strike downward-left with talons extended; hurt = recoiling mid-air, twigs and leaves scattering; defeat = spiraling down, wings drooping, landing in a heap of twigs.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright saturated colors, crisp HD.\nComposition: bird centered in each frame, consistent scale.\nAvoid: background, text, shadows.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "idle",
+            "frames": 5
+          },
+          {
+            "name": "attack",
+            "frames": 5
+          },
+          {
+            "name": "hurt",
+            "frames": 5
+          },
+          {
+            "name": "defeat",
+            "frames": 5
+          }
+        ],
+        "facing": "left",
+        "removeBackground": true
+      }
+    }
+  },
+  "FX_A": {
+    "src": "/generated-assets/fx_a-transparent.webp",
+    "kind": "image",
+    "label": "Efek A",
+    "recipe": {
+      "prompt": "Use case: gameplay effect animation sheet for a side-view 2D cartoon platformer.\nSubject: arrow_hit = small yellow-white impact star burst with wood splinters, appearing, expanding and fading; sprout_grow = a bright green sprout bursting from a point: tiny bud, curling stem, two leaves unfurling, leaf burst with sparkles, settling; splash = sky-blue water splash rising in droplets then falling; dust = cream-tan dust puff clouds for jumping/landing, expanding then dissipating.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines on solid shapes, cel shading, crisp HD.\nAvoid: soft blurry glows, background, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "effect_sheet",
+        "animations": [
+          {
+            "name": "arrow_hit",
+            "frames": 5
+          },
+          {
+            "name": "sprout_grow",
+            "frames": 5
+          },
+          {
+            "name": "splash",
+            "frames": 5
+          },
+          {
+            "name": "dust",
+            "frames": 5
+          }
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_CRAB": {
+    "src": "/generated-assets/boss_crab-transparent.webp",
+    "kind": "image",
+    "label": "Boss Penjaga Kanal",
+    "recipe": {
+      "prompt": "Use case: boss animation sheet for a side-view 2D platformer, boss faces left.\nSubject: Penjaga Kanal, a giant teal-and-coral crab with a carved cream-stone shell decorated with canal tiles, two huge stone claws, a glowing aqua gem on its forehead (its weak point), eyes on stalks. idle = shifting side to side, claws clacking; attack = raising both claws high then slamming them down hard; hurt = recoiling with eyes squeezed, gem flashing; defeat = collapsing flat, claws limp, shell cracked.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright saturated colors, crisp HD.\nComposition: boss centered, legs on the same baseline in every frame, same scale.\nAvoid: background, water, text, shadows.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "idle",
+            "frames": 5
+          },
+          {
+            "name": "attack",
+            "frames": 5
+          },
+          {
+            "name": "hurt",
+            "frames": 5
+          },
+          {
+            "name": "defeat",
+            "frames": 5
+          }
+        ],
+        "facing": "left",
+        "removeBackground": true
+      }
+    }
+  },
+  "NPCS": {
+    "src": "/generated-assets/npcs-transparent.webp",
+    "kind": "image",
+    "label": "NPC Pohon Langit",
+    "recipe": {
+      "prompt": "Use case: friendly NPC animation sheet for a side-view 2D platformer, characters face left.\nSubject: guide_bird = tiny round yellow songbird with a green leaf on its head, flapping and hopping loop; lumi = Tetua Lumi, a kind old gardener woman, short and round, wide straw hat with flowers, green shawl, holding a watering can, talking gesture loop; simpul = Pak Simpul, a wiry old rope-maker man with a white beard, coils of rope over his shoulder, goggles on his forehead, talking gesture loop; nira = Nira, a young canal keeper woman in teal and cream robes with a shell hairpin, holding a long brass valve key, talking gesture loop.\nStyle: bold 2D cartoon like the reference, chibi proportions, thick dark-brown outlines, two-tone cel shading, crisp HD.\nComposition: full body, each character centered with feet on the same baseline, consistent size per character.\nAvoid: background, text, shadows.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "guide_bird",
+            "frames": 5
+          },
+          {
+            "name": "lumi",
+            "frames": 5
+          },
+          {
+            "name": "simpul",
+            "frames": 5
+          },
+          {
+            "name": "nira",
+            "frames": 5
+          }
+        ],
+        "facing": "left",
+        "removeBackground": true
+      }
+    }
+  },
+  "TEX_A1": {
+    "src": "/generated-assets/tex_a1.webp",
+    "kind": "image",
+    "label": "Tekstur akar lembah",
+    "recipe": {
+      "prompt": "Use case: terrain fill material for a side-view 2D cartoon platformer, inside of giant tree root ledges and walls.\nSubject: warm brown tree bark with chunky vertical-ish grooves, knots and small moss patches, painted in the bold cartoon style of the reference with dark-brown line work and two-tone cel shading.\nUsage contract: tiles seamlessly in both directions (left/right and top/bottom edges match), flat even lighting, no light direction, no vignette, no large single features, medium-small detail scale.\nAvoid: grass tops, sky, objects, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "MECHANISMS": {
+    "src": "/generated-assets/mechanisms-transparent.webp",
+    "kind": "image",
+    "label": "Mekanisme segel",
+    "recipe": {
+      "prompt": "Use case: animated seal/gate mechanisms for a side-view 2D cartoon platformer; each frame is a square object that fills a square opening in a wall, frames progress from closed to open.\nSubject: root_gate = a square plug of tightly woven grey dead roots; frames: closed tight weave, cracks of green appearing, roots turning green and loosening, roots pulling apart to the left and right edges, fully open with only green root rims on both sides and an empty center; garden = small square garden bed of dark soil in a wooden root frame: dry cracked soil with dead twigs, wet dark soil with blue sheen, green sprouts, flowering bush, full bloom with golden flowers and a leaf glow; canopy_door = square heavy wooden double door with iron counterweight rings and a big rope latch: closed, latch rope pulled, doors starting to swing up, half open, fully raised showing an empty center; water_dome = square dome of swirling turquoise high-pressure water with white foam rings: turbulent, calmer, forming an upward spiral, narrow upward current column, gentle upward current with bubbles and an open center.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright saturated colors, crisp HD, front-on flat view.\nAvoid: background walls, characters, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "root_gate",
+            "frames": 5
+          },
+          {
+            "name": "garden",
+            "frames": 5
+          },
+          {
+            "name": "canopy_door",
+            "frames": 5
+          },
+          {
+            "name": "water_dome",
+            "frames": 5
+          }
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "FX_B": {
+    "src": "/generated-assets/fx_b-transparent.webp",
+    "kind": "image",
+    "label": "Efek B",
+    "recipe": {
+      "prompt": "Use case: gameplay effect animation sheet for a side-view 2D cartoon platformer.\nSubject: poof = defeated-enemy puff: round green-white smoke clouds with little leaves popping out and fading; thread_attach = a silver-white thread knot snapping tight: ring pulse, small spark lines, settling; checkpoint = golden leaf-shaped light rising and spreading petals upward, sparkles, settling; sparkle = small gold four-point twinkle stars appearing and fading for secrets.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines on solid shapes, cel shading, crisp HD.\nAvoid: soft blurry glows, background, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "effect_sheet",
+        "animations": [
+          {
+            "name": "poof",
+            "frames": 5
+          },
+          {
+            "name": "thread_attach",
+            "frames": 5
+          },
+          {
+            "name": "checkpoint",
+            "frames": 5
+          },
+          {
+            "name": "sparkle",
+            "frames": 5
+          }
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "TEX_A2": {
+    "src": "/generated-assets/tex_a2.webp",
+    "kind": "image",
+    "label": "Tekstur cabang kanopi",
+    "recipe": {
+      "prompt": "Use case: terrain fill material for a side-view 2D cartoon platformer, high canopy branches and wooden walkways.\nSubject: honey-golden light wood with flowing horizontal grain lines, small knots and a few tiny leaves, painted in the bold cartoon style of the reference with dark-brown line work and two-tone cel shading.\nUsage contract: tiles seamlessly in both directions, flat even lighting, no light direction, no vignette, medium-small detail scale.\nAvoid: sky, objects, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A3": {
+    "src": "/generated-assets/tex_a3.webp",
+    "kind": "image",
+    "label": "Tekstur batu kota air",
+    "recipe": {
+      "prompt": "Use case: terrain fill material for a side-view 2D cartoon platformer, stone city canal walls.\nSubject: cream and pale sand-colored carved stone bricks in staggered rows with small teal algae spots and tiny shell inlays, bold cartoon style of the reference with dark-brown line work and two-tone cel shading.\nUsage contract: tiles seamlessly in both directions, flat even lighting, no light direction, no vignette, about 4 brick rows across the image.\nAvoid: water, sky, objects, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "PROPS_A": {
+    "src": "/generated-assets/props_a-transparent.webp",
+    "kind": "image",
+    "label": "Properti dunia A",
+    "recipe": {
+      "prompt": "Use case: atlas of interactable props for a side-view 2D cartoon platformer, each a separate whole object seen side-on.\nSubject: altar_off = small stone checkpoint altar with a carved leaf emblem, unlit grey; altar_on = same altar with the leaf emblem lit golden-green and small leaves sprouting; nest = round woven twig travel nest with a feather and a small blue egg-shaped stone; bud = cluster of three bright green round buds on a bark knot; sprout_platform = flat leafy platform made of two big overlapping green leaves on a short stem, top surface flat; latch_closed = chunky grey stone hook latch clamped shut with a red target ring; latch_open = same stone latch swung open; root_switch = round wooden root junction wheel with a T-shaped carved channel and an arrow target in its center; dew_spring = small stone basin overflowing with bright blue dew water; mushroom = big bouncy orange mushroom with white spots; vine = straight vertical segment of green climbing vine with leaves, top and bottom cut cleanly so it tiles vertically; anchor = brass ring anchor bolted to a wooden plate with a white marking; lever = wooden lever on a stone base tilted left; thorns = row of sharp dark purple thorns on a bramble; root_step = chunky horizontal green root step platform with flat top; seed = Benih Langit, a glowing golden seed with a small green leaf.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright greens and warm golds, crisp HD.\nComposition: one object centered per cell, readable at small size.\nAvoid: background, ground shadows, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "atlas",
+        "parts": [
+          "altar_off",
+          "altar_on",
+          "nest",
+          "bud",
+          "sprout_platform",
+          "latch_closed",
+          "latch_open",
+          "root_switch",
+          "dew_spring",
+          "mushroom",
+          "vine",
+          "anchor",
+          "lever",
+          "thorns",
+          "root_step",
+          "seed"
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "BG_A1": {
+    "src": "/generated-assets/bg_a1.webp",
+    "kind": "image",
+    "label": "Latar Lembah Akar Embun",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer, drawn behind all terrain.\nSubject: the sunlit hollow at the base of a colossal tree: distant layered trunks and arching roots in sage, olive and soft gold, a small river with wooden stilt houses far away, rays of light through leaves, all distant and soft in value so foreground ledges read clearly.\nStyle: bold cartoon like the reference but lower contrast and lighter, thinner outlines for distance.\nUsage contract: shown as-is behind gameplay with slight parallax; keep the whole image as far scenery with no near ledges, no platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A2": {
+    "src": "/generated-assets/bg_a2.webp",
+    "kind": "image",
+    "label": "Latar Kanopi Jembatan Putus",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer, drawn behind all terrain.\nSubject: high canopy of the Sky Tree under a bright sky-blue sky with puffy cream clouds, distant giant branches in honey-brown, leafy clusters, tiny birdhouses and broken hanging rope bridges far in the distance, all soft and distant in value.\nStyle: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance.\nUsage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A3": {
+    "src": "/generated-assets/bg_a3.webp",
+    "kind": "image",
+    "label": "Latar Kota Air Terbalik",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer, drawn behind all terrain.\nSubject: a distant cream-stone city built into the Sky Tree, domes and arches, canals with turquoise water flowing UPWARD as waterfalls in reverse, large floating bubbles, leafy branches framing, soft daylight sky, all soft and distant in value.\nStyle: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance.\nUsage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "PROPS_B": {
+    "src": "/generated-assets/props_b-transparent.webp",
+    "kind": "image",
+    "label": "Properti dunia B",
+    "recipe": {
+      "prompt": "Use case: atlas of puzzle props and projectiles for a side-view 2D cartoon platformer, each a separate whole object.\nSubject: fruit_1 = small ROUND grey-blue stone fruit with one carved dot and a short stem; fruit_2 = medium TRIANGLE-shaped stone fruit with two carved dots and a stem; fruit_3 = large SQUARE blocky stone fruit with three carved dots and a stem; basket = woven wicker basket hanging from three ropes joined at a top hook; lift = flat wooden lift platform with a rope ring at each end, flat top; peg = thick wooden locking peg with a red target ring on its head; leaf_open = large flat green leaf platform spread open, side view, flat top; leaf_folded = same leaf folded closed hanging down; valve = round brass valve wheel with four spokes, front view; raft = small wooden plank raft with rope bindings, side view, flat top; mural = carved cream stone tablet with three wavy water-level marks and small reservoir symbols; feather = Bulu Fokus, a glowing sky-blue feather; bubble = round soap bubble with a white highlight; thorn_shot = a single sharp purple thorn pointing right; arrow_normal = wooden arrow with grey head and white fletching pointing right; arrow_sprout = arrow with a green leaf-bud head and green fletching pointing right; arrow_thread = arrow with a silver hook head trailing a short loop of white thread pointing right.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, bright colors, crisp HD.\nComposition: one object centered per cell, readable at small size.\nAvoid: background, shadows, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "atlas",
+        "parts": [
+          "fruit_1",
+          "fruit_2",
+          "fruit_3",
+          "basket",
+          "lift",
+          "peg",
+          "leaf_open",
+          "leaf_folded",
+          "valve",
+          "raft",
+          "mural",
+          "feather",
+          "bubble",
+          "thorn_shot",
+          "arrow_normal",
+          "arrow_sprout",
+          "arrow_thread"
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "AERA_AIR": {
+    "src": "/generated-assets/aera_air-transparent.webp",
+    "kind": "image",
+    "label": "Aera — udara",
+    "recipe": {
+      "prompt": "Use case: player character animation sheet for a side-view 2D action platformer.\nSubject: Aera, the girl archer in the reference: chibi proportions (head about one third of body height), orange-red pointed hood and short red-orange cape, brown hair with bangs, big brown eyes, brown leather tunic with round gold belt buckle, quiver of green-fletched arrows on her back, brown boots, golden-wood recurve bow held in her front hand. Full body, side view, facing right, identical design and size in every frame.\nRows: jump_start = crouch anticipation then pushing off the ground, knees bending then straightening; rise = rising upward, one knee tucked, arms up, cape trailing down, slight flutter loop; apex = top of the jump, body tucked and floating, cape billowing outward, small loop; fall = falling, legs extended down, arms raised, cape and hood flapping upward, loop.\nStyle: bold 2D cartoon exactly like the reference, thick dark-brown outlines, two-tone cel shading, warm saturated colors, crisp HD rendering.\nAvoid: background, ground, shadows, text, motion blur, outfit changes, cropped limbs.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "jump_start",
+            "frames": 5
+          },
+          {
+            "name": "rise",
+            "frames": 5
+          },
+          {
+            "name": "apex",
+            "frames": 5
+          },
+          {
+            "name": "fall",
+            "frames": 5
+          }
+        ],
+        "facing": "right",
+        "removeBackground": true
+      }
+    }
+  },
+  "AERA_ACTION": {
+    "src": "/generated-assets/aera_action-transparent.webp",
+    "kind": "image",
+    "label": "Aera — aksi",
+    "recipe": {
+      "prompt": "Use case: player character animation sheet for a side-view 2D action platformer.\nSubject: Aera, the girl archer in the reference: chibi proportions (head about one third of body height), orange-red pointed hood and short red-orange cape, brown hair with bangs, big brown eyes, brown leather tunic with round gold belt buckle, quiver of green-fletched arrows on her back, brown boots, golden-wood recurve bow. Full body, side view, facing right, identical design and size in every frame.\nRows: land = landing impact: feet touch down, deep knee squash, recover, standing up; dash = fast horizontal dash forward: low lean, body stretched forward, cape streaming straight back, white speed lines behind her, recovering; hurt = getting hit from the front: recoil backward, wince with eyes shut, arms up, stagger, regain footing; defeat = knocked down: stumbling, falling to knees, lying down, hood over face, small stars above head.\nStyle: bold 2D cartoon exactly like the reference, thick dark-brown outlines, two-tone cel shading, warm saturated colors, crisp HD rendering.\nAvoid: background, ground shadows, text, blood, outfit changes, cropped limbs.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "land",
+            "frames": 5
+          },
+          {
+            "name": "dash",
+            "frames": 5
+          },
+          {
+            "name": "hurt",
+            "frames": 5
+          },
+          {
+            "name": "defeat",
+            "frames": 5
+          }
+        ],
+        "facing": "right",
+        "removeBackground": true
+      }
+    }
+  },
+  "AERA_CLIMB": {
+    "src": "/generated-assets/aera_climb-transparent.webp",
+    "kind": "image",
+    "label": "Aera — panjat dan tali",
+    "recipe": {
+      "prompt": "Use case: player character animation sheet for a side-view 2D action platformer.\nSubject: Aera, the girl archer in the reference: chibi proportions (head about one third of body height), orange-red pointed hood and short red-orange cape, brown hair with bangs, big brown eyes, brown leather tunic with round gold belt buckle, quiver of green-fletched arrows, brown boots, golden-wood recurve bow slung across her back in these rows. Full body, side view, facing right, identical design and size in every frame.\nRows: ledge_hang = hanging from a ledge edge with both hands raised above her head gripping an invisible edge at the top of the cell, legs dangling and swaying gently, loop; ledge_climb = pulling herself up: elbows on the edge, knee up, pushing up, crouched on top, standing up; vine_climb = climbing upward seen from the side, hands alternately reaching up, knees alternately raised, loop; rope_swing = hanging with both hands up gripping a rope above her head, body swinging from leaning back to leaning forward, legs together, cape trailing, loop.\nStyle: bold 2D cartoon exactly like the reference, thick dark-brown outlines, two-tone cel shading, warm saturated colors, crisp HD rendering.\nAvoid: drawing the ledge, vine or rope, background, shadows, text, outfit changes, cropped limbs.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "ledge_hang",
+            "frames": 5
+          },
+          {
+            "name": "ledge_climb",
+            "frames": 5
+          },
+          {
+            "name": "vine_climb",
+            "frames": 5
+          },
+          {
+            "name": "rope_swing",
+            "frames": 5
+          }
+        ],
+        "facing": "right",
+        "removeBackground": true
+      }
+    }
+  },
+  "AERA_BOW": {
+    "src": "/generated-assets/aera_bow-transparent.webp",
+    "kind": "image",
+    "label": "Aera — panahan",
+    "recipe": {
+      "prompt": "Use case: player archery animation sheet for a side-view 2D action platformer.\nSubject: Aera, the girl archer in the reference: chibi proportions (head about one third of body height), orange-red pointed hood and short red-orange cape, brown hair with bangs, big brown eyes, brown leather tunic with round gold belt buckle, quiver of green-fletched arrows, brown boots, golden-wood recurve bow. Full body, side view, facing right, identical design and size in every frame.\nRows: draw_ground = standing firmly, raising the bow forward horizontally, nocking a green-fletched arrow, pulling the string back to her cheek, holding full draw with slight tension tremble (last two frames nearly identical); release_ground = string snaps forward, arrow gone, bow arm extended, follow-through, lowering the bow; draw_air = mid-air with legs tucked and cape floating, bow held horizontally, pulling the string to full draw; release_air = mid-air release, string snapping, recoil, cape flaring, follow-through.\nStyle: bold 2D cartoon exactly like the reference, thick dark-brown outlines, two-tone cel shading, warm saturated colors, crisp HD rendering.\nAvoid: background, ground, shadows, text, flying arrow drawn away from the bow, outfit changes, cropped limbs.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "draw_ground",
+            "frames": 5
+          },
+          {
+            "name": "release_ground",
+            "frames": 5
+          },
+          {
+            "name": "draw_air",
+            "frames": 5
+          },
+          {
+            "name": "release_air",
+            "frames": 5
+          }
+        ],
+        "facing": "right",
+        "removeBackground": true
+      }
+    }
+  },
+  "AERA_MISC": {
+    "src": "/generated-assets/aera_misc-transparent.webp",
+    "kind": "image",
+    "label": "Aera — lain-lain",
+    "recipe": {
+      "prompt": "Use case: player character animation sheet for a side-view 2D action platformer.\nSubject: Aera, the girl archer in the reference: chibi proportions (head about one third of body height), orange-red pointed hood and short red-orange cape, brown hair with bangs, big brown eyes, brown leather tunic with round gold belt buckle, quiver of green-fletched arrows, brown boots, golden-wood recurve bow. Full body, side view, facing right, identical design and size in every frame.\nRows: get_up = rising from lying on the ground: lying, pushing up on hands, kneeling, standing, shaking head; interact = reaching forward with an open palm to touch a mural or altar in front of her, holding, small nod; ability_get = holding the bow high above her head with both hands in triumph, green leaf sparkles swirling, joyful face, loop; swim = swimming horizontally with breaststroke kicks, body horizontal, head up above, cape floating behind, bow on back, loop.\nStyle: bold 2D cartoon exactly like the reference, thick dark-brown outlines, two-tone cel shading, warm saturated colors, crisp HD rendering.\nAvoid: background, water, ground, shadows, text, outfit changes, cropped limbs.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "sprite_sheet",
+        "animations": [
+          {
+            "name": "get_up",
+            "frames": 5
+          },
+          {
+            "name": "interact",
+            "frames": 5
+          },
+          {
+            "name": "ability_get",
+            "frames": 5
+          },
+          {
+            "name": "swim",
+            "frames": 5
+          }
+        ],
+        "facing": "right",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_RIMBA_BASIC": {
+    "src": "/generated-assets/skin_rimba_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Rimba — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Rimba\" forest-ranger outfit: forest-green hood and short green cape with small leaf-shaped trim, moss-green tunic with a brown leather belt, dark brown braided hair under the hood, light tan boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background behind the characters. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_RIMBA_AIR": {
+    "src": "/generated-assets/skin_rimba_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Rimba — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Rimba\" forest-ranger outfit: forest-green hood and short green cape with small leaf-shaped trim, moss-green tunic with a brown leather belt, dark brown hair under the hood, light tan boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_RIMBA_ACTION": {
+    "src": "/generated-assets/skin_rimba_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Rimba — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Rimba\" forest-ranger outfit: forest-green hood and short green cape with small leaf-shaped trim, moss-green tunic with a brown leather belt, dark brown hair under the hood, light tan boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_RIMBA_CLIMB": {
+    "src": "/generated-assets/skin_rimba_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Rimba — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Rimba\" forest-ranger outfit: forest-green hood and short green cape with small leaf-shaped trim, moss-green tunic with a brown leather belt, dark brown hair under the hood, light tan boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_RIMBA_MISC": {
+    "src": "/generated-assets/skin_rimba_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Rimba — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Rimba\" forest-ranger outfit: forest-green hood and short green cape with small leaf-shaped trim, moss-green tunic with a brown leather belt, dark brown hair under the hood, light tan boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SALJU_BASIC": {
+    "src": "/generated-assets/skin_salju_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Salju — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Salju\" snow outfit: white hood with pale-blue fur trim, icy light-blue short cape, light-blue tunic with a silver belt buckle, silver-white hair under the hood, white boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SALJU_ACTION": {
+    "src": "/generated-assets/skin_salju_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Salju — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Salju\" snow outfit: white hood with pale-blue fur trim, icy light-blue short cape, light-blue tunic with a silver belt buckle, silver-white hair under the hood, white boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_RIMBA_BOW": {
+    "src": "/generated-assets/skin_rimba_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Rimba — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Rimba\" forest-ranger outfit: forest-green hood and short green cape with small leaf-shaped trim, moss-green tunic with a brown leather belt, dark brown hair under the hood, light tan boots, the same golden-wood bow and green arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SALJU_AIR": {
+    "src": "/generated-assets/skin_salju_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Salju — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Salju\" snow outfit: white hood with pale-blue fur trim, icy light-blue short cape, light-blue tunic with a silver belt buckle, silver-white hair under the hood, white boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SENJA_BASIC": {
+    "src": "/generated-assets/skin_senja_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Senja — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Senja\" twilight outfit: violet-purple hood and short purple cape with small gold star embroidery, plum tunic with a gold belt buckle, glossy black hair under the hood, dark purple boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SALJU_CLIMB": {
+    "src": "/generated-assets/skin_salju_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Salju — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Salju\" snow outfit: white hood with pale-blue fur trim, icy light-blue short cape, light-blue tunic with a silver belt buckle, silver-white hair under the hood, white boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SENJA_CLIMB": {
+    "src": "/generated-assets/skin_senja_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Senja — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Senja\" twilight outfit: violet-purple hood and short purple cape with small gold star embroidery, plum tunic with a gold belt buckle, glossy black hair under the hood, dark purple boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SALJU_MISC": {
+    "src": "/generated-assets/skin_salju_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Salju — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Salju\" snow outfit: white hood with pale-blue fur trim, icy light-blue short cape, light-blue tunic with a silver belt buckle, silver-white hair under the hood, white boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SENJA_MISC": {
+    "src": "/generated-assets/skin_senja_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Senja — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Senja\" twilight outfit: violet-purple hood and short purple cape with small gold star embroidery, plum tunic with a gold belt buckle, glossy black hair under the hood, dark purple boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SALJU_BOW": {
+    "src": "/generated-assets/skin_salju_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Salju — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Salju\" snow outfit: white hood with pale-blue fur trim, icy light-blue short cape, light-blue tunic with a silver belt buckle, silver-white hair under the hood, white boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SENJA_ACTION": {
+    "src": "/generated-assets/skin_senja_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Senja — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Senja\" twilight outfit: violet-purple hood and short purple cape with small gold star embroidery, plum tunic with a gold belt buckle, glossy black hair under the hood, dark purple boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SENJA_AIR": {
+    "src": "/generated-assets/skin_senja_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Senja — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Senja\" twilight outfit: violet-purple hood and short purple cape with small gold star embroidery, plum tunic with a gold belt buckle, glossy black hair under the hood, dark purple boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BARA_MISC": {
+    "src": "/generated-assets/skin_bara_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bara — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bara\" ember outfit: crimson-red hood with black flame-pattern trim, charcoal-black short cape lined with orange, dark red tunic with a bronze belt buckle, fiery red-orange hair under the hood, black boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BARA_BASIC": {
+    "src": "/generated-assets/skin_bara_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bara — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bara\" ember outfit: crimson-red hood with black flame-pattern trim, charcoal-black short cape lined with orange, dark red tunic with a bronze belt buckle, fiery red-orange hair under the hood, black boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BARA_BOW": {
+    "src": "/generated-assets/skin_bara_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bara — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bara\" ember outfit: crimson-red hood with black flame-pattern trim, charcoal-black short cape lined with orange, dark red tunic with a bronze belt buckle, fiery red-orange hair under the hood, black boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BARA_AIR": {
+    "src": "/generated-assets/skin_bara_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bara — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bara\" ember outfit: crimson-red hood with black flame-pattern trim, charcoal-black short cape lined with orange, dark red tunic with a bronze belt buckle, fiery red-orange hair under the hood, black boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BARA_CLIMB": {
+    "src": "/generated-assets/skin_bara_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bara — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bara\" ember outfit: crimson-red hood with black flame-pattern trim, charcoal-black short cape lined with orange, dark red tunic with a bronze belt buckle, fiery red-orange hair under the hood, black boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SENJA_BOW": {
+    "src": "/generated-assets/skin_senja_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Senja — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Senja\" twilight outfit: violet-purple hood and short purple cape with small gold star embroidery, plum tunic with a gold belt buckle, glossy black hair under the hood, dark purple boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BARA_ACTION": {
+    "src": "/generated-assets/skin_bara_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bara — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bara\" ember outfit: crimson-red hood with black flame-pattern trim, charcoal-black short cape lined with orange, dark red tunic with a bronze belt buckle, fiery red-orange hair under the hood, black boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAMUDRA_BASIC": {
+    "src": "/generated-assets/skin_samudra_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Samudra — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Samudra\" ocean outfit: teal hood and short teal cape with white wave pattern trim, sea-blue tunic with a coral-pink belt, navy-blue hair under the hood, sand-coloured boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAMUDRA_AIR": {
+    "src": "/generated-assets/skin_samudra_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Samudra — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Samudra\" ocean outfit: teal hood and short teal cape with white wave pattern trim, sea-blue tunic with a coral-pink belt, navy-blue hair under the hood, sand-coloured boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAMUDRA_ACTION": {
+    "src": "/generated-assets/skin_samudra_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Samudra — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Samudra\" ocean outfit: teal hood and short teal cape with white wave pattern trim, sea-blue tunic with a coral-pink belt, navy-blue hair under the hood, sand-coloured boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAMUDRA_CLIMB": {
+    "src": "/generated-assets/skin_samudra_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Samudra — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Samudra\" ocean outfit: teal hood and short teal cape with white wave pattern trim, sea-blue tunic with a coral-pink belt, navy-blue hair under the hood, sand-coloured boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAMUDRA_BOW": {
+    "src": "/generated-assets/skin_samudra_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Samudra — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Samudra\" ocean outfit: teal hood and short teal cape with white wave pattern trim, sea-blue tunic with a coral-pink belt, navy-blue hair under the hood, sand-coloured boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAMUDRA_MISC": {
+    "src": "/generated-assets/skin_samudra_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Samudra — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Samudra\" ocean outfit: teal hood and short teal cape with white wave pattern trim, sea-blue tunic with a coral-pink belt, navy-blue hair under the hood, sand-coloured boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAKURA_CLIMB": {
+    "src": "/generated-assets/skin_sakura_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Sakura — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Sakura\" blossom outfit: soft pink hood and short pink cape decorated with small white cherry-blossom petals, rose-pink tunic with a cream sash, light pink hair under the hood, cream boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAKURA_ACTION": {
+    "src": "/generated-assets/skin_sakura_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Sakura — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Sakura\" blossom outfit: soft pink hood and short pink cape decorated with small white cherry-blossom petals, rose-pink tunic with a cream sash, light pink hair under the hood, cream boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAKURA_MISC": {
+    "src": "/generated-assets/skin_sakura_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Sakura — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Sakura\" blossom outfit: soft pink hood and short pink cape decorated with small white cherry-blossom petals, rose-pink tunic with a cream sash, light pink hair under the hood, cream boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BINTANG_CLIMB": {
+    "src": "/generated-assets/skin_bintang_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Malam Bintang — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Malam Bintang\" starry-night outfit: deep navy-blue hood and short navy cape dotted with tiny white and gold stars, midnight-blue tunic with a silver belt buckle, silver-white hair under the hood, silver-grey boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAKURA_AIR": {
+    "src": "/generated-assets/skin_sakura_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Sakura — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Sakura\" blossom outfit: soft pink hood and short pink cape decorated with small white cherry-blossom petals, rose-pink tunic with a cream sash, light pink hair under the hood, cream boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAKURA_BASIC": {
+    "src": "/generated-assets/skin_sakura_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Sakura — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Sakura\" blossom outfit: soft pink hood and short pink cape decorated with small white cherry-blossom petals, rose-pink tunic with a cream sash, light pink hair under the hood, cream boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BINTANG_MISC": {
+    "src": "/generated-assets/skin_bintang_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Malam Bintang — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Malam Bintang\" starry-night outfit: deep navy-blue hood and short navy cape dotted with tiny white and gold stars, midnight-blue tunic with a silver belt buckle, silver-white hair under the hood, silver-grey boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BINTANG_BASIC": {
+    "src": "/generated-assets/skin_bintang_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Malam Bintang — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Malam Bintang\" starry-night outfit: deep navy-blue hood and short navy cape dotted with tiny white and gold stars, midnight-blue tunic with a silver belt buckle, silver-white hair under the hood, silver-grey boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BINTANG_AIR": {
+    "src": "/generated-assets/skin_bintang_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Malam Bintang — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Malam Bintang\" starry-night outfit: deep navy-blue hood and short navy cape dotted with tiny white and gold stars, midnight-blue tunic with a silver belt buckle, silver-white hair under the hood, silver-grey boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_SAKURA_BOW": {
+    "src": "/generated-assets/skin_sakura_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Sakura — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Sakura\" blossom outfit: soft pink hood and short pink cape decorated with small white cherry-blossom petals, rose-pink tunic with a cream sash, light pink hair under the hood, cream boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BINTANG_ACTION": {
+    "src": "/generated-assets/skin_bintang_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Malam Bintang — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Malam Bintang\" starry-night outfit: deep navy-blue hood and short navy cape dotted with tiny white and gold stars, midnight-blue tunic with a silver belt buckle, silver-white hair under the hood, silver-grey boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BINTANG_BOW": {
+    "src": "/generated-assets/skin_bintang_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Malam Bintang — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Malam Bintang\" starry-night outfit: deep navy-blue hood and short navy cape dotted with tiny white and gold stars, midnight-blue tunic with a silver belt buckle, silver-white hair under the hood, silver-grey boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_MENTARI_BASIC": {
+    "src": "/generated-assets/skin_mentari_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Mentari — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Mentari\" sunshine outfit: golden-yellow hood and short golden cape with orange sun-ray trim, cream tunic with an orange sash, bright blonde hair under the hood, light brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_MENTARI_AIR": {
+    "src": "/generated-assets/skin_mentari_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Mentari — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Mentari\" sunshine outfit: golden-yellow hood and short golden cape with orange sun-ray trim, cream tunic with an orange sash, bright blonde hair under the hood, light brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_MENTARI_ACTION": {
+    "src": "/generated-assets/skin_mentari_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Mentari — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Mentari\" sunshine outfit: golden-yellow hood and short golden cape with orange sun-ray trim, cream tunic with an orange sash, bright blonde hair under the hood, light brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_MENTARI_CLIMB": {
+    "src": "/generated-assets/skin_mentari_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Mentari — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Mentari\" sunshine outfit: golden-yellow hood and short golden cape with orange sun-ray trim, cream tunic with an orange sash, bright blonde hair under the hood, light brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_MENTARI_BOW": {
+    "src": "/generated-assets/skin_mentari_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Mentari — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Mentari\" sunshine outfit: golden-yellow hood and short golden cape with orange sun-ray trim, cream tunic with an orange sash, bright blonde hair under the hood, light brown boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_MENTARI_MISC": {
+    "src": "/generated-assets/skin_mentari_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Mentari — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Mentari\" sunshine outfit: golden-yellow hood and short golden cape with orange sun-ray trim, cream tunic with an orange sash, bright blonde hair under the hood, light brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_PERI_BASIC": {
+    "src": "/generated-assets/skin_peri_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Peri Jamur — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Peri Jamur\" mushroom-fairy outfit: toadstool-red hood with round white spots (keeping the same pointed hood shape), cream short cape, olive-green tunic with a little mushroom belt charm, auburn hair under the hood, brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_PERI_AIR": {
+    "src": "/generated-assets/skin_peri_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Peri Jamur — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Peri Jamur\" mushroom-fairy outfit: toadstool-red hood with round white spots (keeping the same pointed hood shape), cream short cape, olive-green tunic with a little mushroom belt charm, auburn hair under the hood, brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_PERI_ACTION": {
+    "src": "/generated-assets/skin_peri_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Peri Jamur — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Peri Jamur\" mushroom-fairy outfit: toadstool-red hood with round white spots (keeping the same pointed hood shape), cream short cape, olive-green tunic with a little mushroom belt charm, auburn hair under the hood, brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_PERI_BOW": {
+    "src": "/generated-assets/skin_peri_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Peri Jamur — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Peri Jamur\" mushroom-fairy outfit: toadstool-red hood with round white spots (keeping the same pointed hood shape), cream short cape, olive-green tunic with a little mushroom belt charm, auburn hair under the hood, brown boots, the same golden-wood bow and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_PERI_MISC": {
+    "src": "/generated-assets/skin_peri_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Peri Jamur — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Peri Jamur\" mushroom-fairy outfit: toadstool-red hood with round white spots (keeping the same pointed hood shape), cream short cape, olive-green tunic with a little mushroom belt charm, auburn hair under the hood, brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BAYANGAN_BOW": {
+    "src": "/generated-assets/skin_bayangan_bow-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bayangan — panahan",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bayangan\" shadow outfit: charcoal-black hood and short black cape with glowing cyan trim lines, dark slate-grey tunic with a cyan gem buckle, white hair under the hood, black boots, a dark wood bow with cyan string accents and arrow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_bow-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BAYANGAN_BASIC": {
+    "src": "/generated-assets/skin_bayangan_basic-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bayangan — gerak dasar",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bayangan\" shadow outfit: charcoal-black hood and short black cape with glowing cyan trim lines, dark slate-grey tunic with a cyan gem buckle, white hair under the hood, black boots, a dark wood bow with cyan string accents. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_basic-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BAYANGAN_MISC": {
+    "src": "/generated-assets/skin_bayangan_misc-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bayangan — lain-lain",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bayangan\" shadow outfit: charcoal-black hood and short black cape with glowing cyan trim lines, dark slate-grey tunic with a cyan gem buckle, white hair under the hood, black boots, a dark wood bow with cyan string accents. Keep EVERY pose, body position, size, facing direction, sparkles and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_misc-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BAYANGAN_AIR": {
+    "src": "/generated-assets/skin_bayangan_air-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bayangan — udara",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bayangan\" shadow outfit: charcoal-black hood and short black cape with glowing cyan trim lines, dark slate-grey tunic with a cyan gem buckle, white hair under the hood, black boots, a dark wood bow with cyan string accents. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_air-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BAYANGAN_CLIMB": {
+    "src": "/generated-assets/skin_bayangan_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bayangan — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bayangan\" shadow outfit: charcoal-black hood and short black cape with glowing cyan trim lines, dark slate-grey tunic with a cyan gem buckle, white hair under the hood, black boots, a dark wood bow with cyan string accents. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_BAYANGAN_ACTION": {
+    "src": "/generated-assets/skin_bayangan_action-transparent.webp",
+    "kind": "image",
+    "label": "Skin Bayangan — aksi",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Bayangan\" shadow outfit: charcoal-black hood and short black cape with glowing cyan trim lines, dark slate-grey tunic with a cyan gem buckle, white hair under the hood, black boots, a dark wood bow with cyan string accents. Keep EVERY pose, body position, size, facing direction, speed lines and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_action-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "SKIN_PERI_CLIMB": {
+    "src": "/generated-assets/skin_peri_climb-transparent.webp",
+    "kind": "image",
+    "label": "Skin Peri Jamur — panjat",
+    "recipe": {
+      "prompt": "Repaint the girl archer in every frame as the \"Peri Jamur\" mushroom-fairy outfit: toadstool-red hood with round white spots (keeping the same pointed hood shape), cream short cape, olive-green tunic with a little mushroom belt charm, auburn hair under the hood, brown boots, the same golden-wood bow. Keep EVERY pose, body position, size, facing direction and the empty spacing between frames exactly as they are; same chibi proportions and the same hood-and-short-cape silhouette, so each frame lines up with the original. Only colours, outfit details and hair change. Bold cartoon style with thick dark-brown outlines and two-tone cel shading, crisp HD. Flat chroma-key background. No text, no extra objects.",
+      "refs": [
+        "public/generated-assets/aera_climb-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A4": {
+    "src": "/generated-assets/enemies_a4-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Reruntuhan Matahari",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"kumbang cermin\", a golden temple beetle carrying a big round polished mirror shield in front (row 1 walking, row 2 raising and slamming the mirror). Rows 3-4: \"roh prisma\", a small floating crystal prism spirit with a glowing amber core and two tiny eyes (row 3 bobbing, row 4 charging and firing a small orb of sunlight to the left). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, golden and amber palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a3-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A6": {
+    "src": "/generated-assets/enemies_a6-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Kepulauan Angin",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"pari awan\", a fluffy white manta ray made of cloud with sky-blue markings and a long tail (row 1 gliding flap loop, row 2 folding and diving down-left). Rows 3-4: \"penembak angin\", a squat stone pinwheel turret with a blue gust mouth and one eye (row 3 idle spin, row 4 inhaling then blasting a swirl of wind to the left). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, sky blue and white palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a2-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A5": {
+    "src": "/generated-assets/enemies_a5-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Menara Lonceng",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"tinta melompat\", a round purple ink blob with a little paper scrap on its head and big white eyes (row 1 squash-and-stretch hop, row 2 puffing up and lunging). Rows 3-4: \"pemburu gema\", a small grey-violet hound-like creature with huge bat ears and no eyes, sound rings around its ears (row 3 sniffing walk, row 4 lowering head and charging). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, misty purple palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a1-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A9": {
+    "src": "/generated-assets/enemies_a9-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Danau Bulan",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"ngengat bulan\", a silver-white moth with crescent-moon wing markings and fuzzy body (row 1 fluttering loop, row 2 folding wings and diving down-left). Rows 3-4: \"pemanah bayangan\", a small hooded shadow figure made of dark indigo smoke with glowing white eyes holding a tiny bow (row 3 idle sway, row 4 drawing and firing a dark arrow to the left). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, silver, indigo and pale blue palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a2-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A7": {
+    "src": "/generated-assets/enemies_a7-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Kebun Bara",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"peri bara\", a round glowing ember imp made of orange coal with a flame tuft and a cheeky grin (row 1 hop loop, row 2 puffing and lunging). Rows 3-4: \"kumbang abu\", a charcoal-grey beetle with glowing red cracks on its shell and smoking back (row 3 walking, row 4 lowering horn and charging). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, red-orange and charcoal palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a1-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A8": {
+    "src": "/generated-assets/enemies_a8-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Gua Kristal",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"kepiting kristal\", a lilac crab whose shell and big shield claw are made of pink-violet crystals (row 1 scuttle walk, row 2 raising and slamming the crystal claw). Rows 3-4: \"serpih melayang\", a floating cluster of icy cyan crystal shards with a single glowing eye (row 3 hovering bob, row 4 charging and shooting a small crystal shard to the left). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, pink, violet and cyan palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a3-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A11": {
+    "src": "/generated-assets/enemies_a11-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Sarang Petir",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"elang petir\", a dark slate-blue hawk with yellow lightning-bolt feather tips (row 1 flapping hover loop, row 2 tucking and diving down-left with sparks). Rows 3-4: \"awan guntur\", a grumpy dark grey storm cloud sitting on a small rock with a yellow lightning nose (row 3 rumbling idle, row 4 puffing up and spitting a lightning spark to the left). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, slate, grey and electric yellow palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a2-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_MIRROR": {
+    "src": "/generated-assets/boss_mirror-transparent.webp",
+    "kind": "image",
+    "label": "Boss Raja Kumbang Cermin",
+    "recipe": {
+      "prompt": "Replace the boss in this animation sheet with a new boss, keeping each frame in its own cell at the same position, similar size and the same motion per row, facing left. The boss is \"Raja Kumbang Cermin\": a huge golden scarab beetle king with a polished round mirror on its back and two big mirror-plated forelegs, a glowing sun-gem on its forehead (its weak point), ruby eyes. Rows: idle shifting loop; attack raising both mirror forelegs then slamming down; hurt recoiling with the sun-gem flashing; defeat collapsing flat with the mirror cracked. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, gold and amber palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/boss_crab-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A10": {
+    "src": "/generated-assets/enemies_a10-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Mesin Waktu",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"robot pegas\", a small round brass clockwork robot standing on a coiled spring with a key on its back (row 1 boing hop loop, row 2 compressing and launching forward). Rows 3-4: \"tikus roda\", a mechanical copper mouse with a gear for an ear and a wind-up tail (row 3 scurrying walk, row 4 head down charging with sparks). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, brass, copper and teal palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a1-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_STAG": {
+    "src": "/generated-assets/boss_stag-transparent.webp",
+    "kind": "image",
+    "label": "Boss Rusa Bara",
+    "recipe": {
+      "prompt": "Replace the boss in this animation sheet with a new boss, keeping each frame in its own cell at the same position, similar size and the same motion per row, facing left. The boss is \"Rusa Bara\": a large stag made of dark charcoal bark with glowing orange ember cracks, antlers of burning branches with small flames, a mane of embers. Rows: idle breathing loop with flickering antlers; attack crouching low then leaping upward with legs tucked; hurt flinching with eyes shut and embers scattering; defeat sinking down, flames going out into smoke. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, charcoal, orange and red palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/boss_moss-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A13": {
+    "src": "/generated-assets/enemies_a13-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Mahkota Bintang",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"ksatria rasi\", a small white-and-gold armored guardian with a star-shaped shield held in front (row 1 walking, row 2 raising and slamming the star shield). Rows 3-4: \"roh bintang\", a floating pale-gold star spirit with a soft face and trailing sparkles (row 3 hovering bob, row 4 charging and shooting a small star to the left). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, white, gold and night-blue palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a3-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_GOLEM": {
+    "src": "/generated-assets/boss_golem-transparent.webp",
+    "kind": "image",
+    "label": "Boss Golem Jam",
+    "recipe": {
+      "prompt": "Replace the boss in this animation sheet with a new boss, keeping each frame in its own cell at the same position, similar size and the same motion per row, facing left. The boss is \"Golem Jam\": a hulking clockwork golem of brass and root-wrapped wood, a big clock face on its chest with a glowing teal core in the centre (its weak point), two huge gear-fists. Rows: idle ticking sway loop; attack raising both gear-fists then slamming down; hurt recoiling with the clock core flashing and springs popping; defeat slumping down, hands of the clock stopped, smoke puffs. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, brass, copper and teal palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/boss_crab-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "ENEMIES_A12": {
+    "src": "/generated-assets/enemies_a12-transparent.webp",
+    "kind": "image",
+    "label": "Musuh Taman Jamur",
+    "recipe": {
+      "prompt": "Replace the creatures in this animation sheet with new ones, keeping each frame in its own cell at the same position, similar size and the same motion per row, all facing left. Rows 1-2: \"bola spora\", a round magenta puffball mushroom with tiny legs and spots, puffs of pink spores (row 1 hop loop, row 2 puffing and lunging). Rows 3-4: \"ksatria jamur\", a small knight whose helmet is a purple mushroom cap, holding a twig spear (row 3 marching walk, row 4 lowering the spear and charging). Bold cartoon style, thick dark-brown outlines, two-tone cel shading, magenta, purple and cream palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/enemies_a1-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_DRAGON": {
+    "src": "/generated-assets/boss_dragon-transparent.webp",
+    "kind": "image",
+    "label": "Boss Naga Awan",
+    "recipe": {
+      "prompt": "Replace the boss in this animation sheet with a new boss, keeping each frame in its own cell at the same position, similar size and the same motion per row, facing left. The boss is \"Naga Awan\": a serpentine storm dragon with a slate-blue body wrapped in white cloud puffs, yellow lightning-bolt horns and wing fins crackling with electricity. Rows: idle flying hover loop; attack coiling back then diving strike down-left with jaws open; hurt recoiling with sparks scattering; defeat spiralling down and dissolving into grey clouds. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, slate blue, white and electric yellow palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/boss_eagle-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "GATES_C": {
+    "src": "/generated-assets/gates_c-transparent.webp",
+    "kind": "image",
+    "label": "Segel lapisan atas II",
+    "recipe": {
+      "prompt": "Replace the four animated gates in this sheet with four new square gates, one per row, each frame staying in its own cell, square, front-on, progressing left to right from fully closed to fully open with an empty centre in the last frame. Row 1 \"moon_door\": a silver door with three moon-phase discs that fades from solid to a moonlit open frame. Row 2 \"clock_gate\": a brass gate of interlocking gears and a clock face whose gears rotate apart to open. Row 3 \"thunder_seal\": a crackling yellow lightning barrier in a slate frame that discharges and fades open. Row 4 \"heart_shell\": a white-bark shell with star-flower patterns that cracks and opens like a seed husk revealing a golden glow then an empty centre. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/mechanisms-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "FX_C": {
+    "src": "/generated-assets/fx_c-transparent.webp",
+    "kind": "image",
+    "label": "Efek C",
+    "recipe": {
+      "prompt": "Replace the four effect animations in this sheet with four new effects, one per row, each frame staying in its own cell and progressing left to right (appear, peak, fade). Row 1 \"light_spark\": a golden sunbeam starburst with rays and sparkles. Row 2 \"fire_burst\": an orange-red cartoon fire burst with flames and embers. Row 3 \"wind_gust\": white-blue swirling wind curls and streaks. Row 4 \"lightning\": a bright yellow zig-zag lightning bolt strike with a small impact flash. Bold cartoon style, thick dark-brown outlines on solid shapes, cel shading, crisp HD. Flat chroma-key background, no soft blurry glows, no text.",
+      "refs": [
+        "public/generated-assets/fx_a-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "effect_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "NPCS_C": {
+    "src": "/generated-assets/npcs_c-transparent.webp",
+    "kind": "image",
+    "label": "NPC lapisan atas II",
+    "recipe": {
+      "prompt": "Replace the four characters in this animation sheet with four new friendly characters, one per row, keeping each frame in its own cell at the same position, similar size and the same idle/talking motion, facing left, full body, chibi proportions. Row 1 \"Pertapa Bulan\": a serene old woman in silver-blue robes with a crescent-moon staff. Row 2 \"Tiko\": a small mechanic boy with oversized goggles, brass tool belt and a big wrench. Row 3 \"Guntur\": a burly storm-tamer man with a lightning-rod staff and a grey cloud cloak. Row 4 \"Roh Pohon\": a small glowing tree spirit with a leafy crown, white bark skin and golden eyes. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/npcs-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "PROPS_C": {
+    "src": "/generated-assets/props_c-transparent.webp",
+    "kind": "image",
+    "label": "Properti C — cahaya, lonceng, angin",
+    "recipe": {
+      "prompt": "Use case: atlas of puzzle props for a side-view 2D cartoon platformer, each a separate whole object.\nSubject: sun_lens = round golden temple lens set in a carved stone ring, glowing warm; shutter = carved stone leaf-shaped shutter cover with a red target ring; mirror = a flat square polished mirror tile in a gold frame, front view; prism = a clear triangular crystal prism on a small gold stand; eye_off = a stone guardian statue eye socket, dark and closed; eye_on = the same statue eye glowing bright gold; bell = a floating bronze bell with violet ribbon; echo_crystal = a violet tuning crystal on a stone base with sound rings; music_mural = a carved stone tablet with three musical bell symbols; fan = a wooden windmill fan wheel with four white sail blades, front view; seed_pod = a large round golden-green seed with a leafy tuft and a little parachute fluff; seed_house = a woven nest-house shaped like a flower bud on a branch, open at the top; waystation = a small woven wind nest on a stick with a blue ribbon; arrow_echo = arrow with a violet crystal head and purple fletching pointing right; arrow_wind = arrow with a swirl-shaped white head and sky-blue fletching pointing right; arrow_ember = arrow with a glowing orange flame head and red fletching pointing right.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, crisp HD.\nComposition: one object centered per cell, generous margin, readable at small size.\nAvoid: background, shadows, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "atlas",
+        "parts": [
+          "sun_lens",
+          "shutter",
+          "mirror",
+          "prism",
+          "eye_off",
+          "eye_on",
+          "bell",
+          "echo_crystal",
+          "music_mural",
+          "fan",
+          "seed_pod",
+          "seed_house",
+          "waystation",
+          "arrow_echo",
+          "arrow_wind",
+          "arrow_ember"
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "PROPS_E": {
+    "src": "/generated-assets/props_e-transparent.webp",
+    "kind": "image",
+    "label": "Properti E — mesin, badai, bintang",
+    "recipe": {
+      "prompt": "Use case: atlas of puzzle props for a side-view 2D cartoon platformer, each a separate whole object.\nSubject: gear_ring = a large round brass gear ring wrapped with thin roots, front view, with a single glowing green leaf symbol at its top edge; gear_core = a round glowing teal crystal core in a brass housing, front view; lock_pin = a brass locking pin with a red target ring on its head; pendulum = a heavy brass pendulum bob shaped like an acorn at the end of a short rod; gear_platform = a flat wooden-and-brass platform plank, side view, flat top; storm_totem = a tall carved slate-stone totem with yellow lightning runes crackling; totem_broken = the same totem broken in half and dark; star_node = a round silver star-flower node on a small branch, unlit; star_node_lit = the same star node glowing bright gold; spore_lamp = a glowing teal mushroom lamp; cloud_platform = a fluffy white cloud platform with a flat top, side view; crystal_platform = a flat pink-cyan crystal ledge platform, side view, flat top.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, crisp HD.\nComposition: one object centered per cell, generous margin, readable at small size.\nAvoid: background, shadows, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "atlas",
+        "parts": [
+          "gear_ring",
+          "gear_core",
+          "lock_pin",
+          "pendulum",
+          "gear_platform",
+          "storm_totem",
+          "totem_broken",
+          "star_node",
+          "star_node_lit",
+          "spore_lamp",
+          "cloud_platform",
+          "crystal_platform"
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "NPCS_B": {
+    "src": "/generated-assets/npcs_b-transparent.webp",
+    "kind": "image",
+    "label": "NPC lapisan atas I",
+    "recipe": {
+      "prompt": "Replace the four characters in this animation sheet with four new friendly characters, one per row, keeping each frame in its own cell at the same position, similar size and the same idle/talking motion, facing left, full body, chibi proportions. Row 1 \"Sora\": an old temple keeper monk with a golden sun-disc hat and orange robe holding a lantern. Row 2 \"Pustakawan Gema\": a tall thin owl librarian in purple robes carrying a stack of books and a tiny bell. Row 3 \"Bayu\": a young sky sailor boy with goggles, blue scarf blowing in the wind and a paper pinwheel. Row 4 \"Rara\": a cheerful gardener girl in a red apron with heat-proof gloves holding a small ember lantern. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/npcs-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "GATES_B": {
+    "src": "/generated-assets/gates_b-transparent.webp",
+    "kind": "image",
+    "label": "Segel lapisan atas I",
+    "recipe": {
+      "prompt": "Replace the four animated gates in this sheet with four new square gates, one per row, each frame staying in its own cell, square, front-on, progressing left to right from fully closed to fully open with an empty centre in the last frame. Row 1 \"sun_door\": a carved golden stone door with a big sun emblem that splits into stone petals opening outward. Row 2 \"resonance\": a shimmering violet sound membrane with ring ripples that tunes into a clear open archway. Row 3 \"storm\": a swirling grey-blue storm vortex in a stone frame that calms into a gentle open breeze arch. Row 4 \"ember_flower\": a huge frozen dark flower bud in a root frame that warms and blooms open into orange petals around an empty centre. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/mechanisms-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "PROPS_D": {
+    "src": "/generated-assets/props_d-transparent.webp",
+    "kind": "image",
+    "label": "Properti D — panas, kristal, bulan",
+    "recipe": {
+      "prompt": "Use case: atlas of puzzle props for a side-view 2D cartoon platformer, each a separate whole object seen side-on.\nSubject: furnace_off = a round stone garden furnace with a cold dark grate; furnace_on = the same furnace with bright orange fire inside and sparks; vent_open = a bronze pipe vent with its flap open, side view; vent_closed = the same vent with the flap shut; heat_flower = a tall greenhouse thermometer flower with a round white bulb at the top on a green stem; bramble = a tangle of dry brown thorny brambles, square-ish clump; chest_closed = a wooden treasure chest with gold trim, closed; chest_open = the same chest open with golden light; star_shard = a small glowing pale-gold star crystal shard; crystal_cluster = a cluster of pink and cyan crystals on a rock; moon_statue = a silver stone pedestal holding a round moon disc; moon_altar = a low silver altar with a crescent moon carving and blue gem; lantern = a hanging paper lantern glowing warm.\nStyle: bold 2D cartoon like the reference, thick dark-brown outlines, two-tone cel shading, crisp HD.\nComposition: one object centered per cell, generous margin, readable at small size.\nAvoid: background, shadows, text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "atlas",
+        "parts": [
+          "furnace_off",
+          "furnace_on",
+          "vent_open",
+          "vent_closed",
+          "heat_flower",
+          "bramble",
+          "chest_closed",
+          "chest_open",
+          "star_shard",
+          "crystal_cluster",
+          "moon_statue",
+          "moon_altar",
+          "lantern"
+        ],
+        "removeBackground": true
+      }
+    }
+  },
+  "BOSS_CROWN": {
+    "src": "/generated-assets/boss_crown-transparent.webp",
+    "kind": "image",
+    "label": "Boss Penjaga Mahkota",
+    "recipe": {
+      "prompt": "Replace the boss in this animation sheet with a new boss, keeping each frame in its own cell at the same position, similar size and the same motion per row, facing left. The boss is \"Penjaga Mahkota\": a majestic guardian spirit of the tree crown, a white-bark owl-like being with wide wings of golden leaves, a crown of star-flowers and dark corruption vines tangled on its chest with a glowing purple core. Rows: idle hovering wing-beat loop; attack sweeping wings back then diving strike down-left; hurt recoiling with leaves and dark vines scattering; defeat drifting down as the corruption breaks and golden petals fall. Bold cartoon style, thick dark-brown outlines, two-tone cel shading, white, gold and violet palette, crisp HD. Flat chroma-key background, no text.",
+      "refs": [
+        "public/generated-assets/boss_eagle-transparent.webp"
+      ],
+      "playabl": {
+        "tool": "image_gen_edit",
+        "kind": "sprite_sheet",
+        "keptSourceSize": "1968x1584",
+        "removeBackground": true
+      }
+    }
+  },
+  "BG_A4": {
+    "src": "/generated-assets/bg_a4.webp",
+    "kind": "image",
+    "label": "Latar Reruntuhan Matahari",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: a ruined golden sun temple hidden among giant tree leaves, tall pillars, stained-glass windows of amber and teal, sunbeams through the canopy, all distant and soft in value. Style: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A5": {
+    "src": "/generated-assets/bg_a5.webp",
+    "kind": "image",
+    "label": "Latar Menara Lonceng",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: the inside of a tall misty violet bell tower grown into the tree, broken library shelves, floating bronze bells far away, soft purple fog layers, all distant and soft. Style: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A6": {
+    "src": "/generated-assets/bg_a6.webp",
+    "kind": "image",
+    "label": "Latar Kepulauan Angin",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: a bright sky full of small floating grassy islands, giant wooden windmills, colourful wind banners, fast streaky cream clouds, sky-blue and white, all distant and soft. Style: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A7": {
+    "src": "/generated-assets/bg_a7.webp",
+    "kind": "image",
+    "label": "Latar Kebun Bara",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: a red-gold sunset garden in the tree canopy, glass greenhouses glowing warm, charcoal flowers, stone furnaces with gentle smoke, orange sky, all distant and soft. Style: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A8": {
+    "src": "/generated-assets/bg_a8.webp",
+    "kind": "image",
+    "label": "Latar Gua Kristal",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: a glittering hollow inside the tree full of giant pink, violet and cyan crystals, sparkling treasure piles far away, soft glowing deep-blue cave, all distant and soft. Style: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A10": {
+    "src": "/generated-assets/bg_a10.webp",
+    "kind": "image",
+    "label": "Latar Mesin Waktu Akar",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: the inside of a giant clock tower wrapped in tree roots, huge brass gears and pendulums far away, floating golden dust, warm brass and teal, all distant and soft. Style: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A9": {
+    "src": "/generated-assets/bg_a9.webp",
+    "kind": "image",
+    "label": "Latar Danau Cermin Bulan",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: a calm mirror lake above a sea of clouds at night, a huge full moon, silver arched architecture reflected in the water, stars reflected below, silver and indigo, all distant and soft. Style: bold cartoon like the reference, lower contrast, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A12": {
+    "src": "/generated-assets/bg_a12.webp",
+    "kind": "image",
+    "label": "Latar Taman Jamur Senja",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: a dusk garden of giant glowing mushrooms in magenta, purple and teal, floating spores like fireflies, a pink-violet twilight sky through branches, all distant and soft. Style: bold cartoon like the reference, lower contrast and lighter, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A11": {
+    "src": "/generated-assets/bg_a11.webp",
+    "kind": "image",
+    "label": "Latar Sarang Awan Petir",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: a towering storm nest of dark slate clouds high in the tree crown, distant yellow lightning bolts, giant branches with lightning-rod totems, slate blue and grey, all distant and soft. Style: bold cartoon like the reference, lower contrast, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A5": {
+    "src": "/generated-assets/tex_a5.webp",
+    "kind": "image",
+    "label": "Tekstur batu menara ungu",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: misty violet-grey tower stone bricks with a few ivy leaves and faint carved musical notes, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, about 4 brick rows across. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "BG_A13": {
+    "src": "/generated-assets/bg_a13.webp",
+    "kind": "image",
+    "label": "Latar Mahkota Bintang",
+    "recipe": {
+      "prompt": "Use case: distant background behind a side-view platformer. Subject: the white crown of the Sky Tree under a starry night sky, pale glowing branches, star-flowers, a faint constellation pattern, the whole world far below as tiny lights, white, gold and deep blue, all distant and soft. Style: bold cartoon like the reference, lower contrast, thinner outlines for distance. Usage contract: shown as-is behind gameplay with slight parallax; no near platforms, no characters, no UI, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "backdrop",
+        "size": "1536x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A7": {
+    "src": "/generated-assets/tex_a7.webp",
+    "kind": "image",
+    "label": "Tekstur kulit kayu bara",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: dark red-brown charred bark with thin glowing orange ember veins, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, medium-small detail. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A4": {
+    "src": "/generated-assets/tex_a4.webp",
+    "kind": "image",
+    "label": "Tekstur batu kuil emas",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: golden sandstone temple bricks with small carved sun motifs and cracks, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, about 4 brick rows across. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A8": {
+    "src": "/generated-assets/tex_a8.webp",
+    "kind": "image",
+    "label": "Tekstur batu kristal",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: deep indigo cave rock studded with small pink and cyan crystal facets, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, medium-small detail. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A6": {
+    "src": "/generated-assets/tex_a6.webp",
+    "kind": "image",
+    "label": "Tekstur batu pulau angin",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: pale blue-grey floating island rock with soft earthy layers and tiny white pebbles, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, medium-small detail. No grass, no objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A12": {
+    "src": "/generated-assets/tex_a12.webp",
+    "kind": "image",
+    "label": "Tekstur tanah jamur",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: soft purple-brown mushroom soil with tiny glowing teal spores and root threads, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, medium-small detail. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A10": {
+    "src": "/generated-assets/tex_a10.webp",
+    "kind": "image",
+    "label": "Tekstur panel mesin",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: dark wood planks bound with brass plates and rivets, a few thin roots crossing, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, medium-small detail. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A11": {
+    "src": "/generated-assets/tex_a11.webp",
+    "kind": "image",
+    "label": "Tekstur batu badai",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: dark slate storm rock with faint yellow lightning-shaped cracks, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, medium-small detail. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A9": {
+    "src": "/generated-assets/tex_a9.webp",
+    "kind": "image",
+    "label": "Tekstur batu bulan",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: silver-blue moonstone bricks with small crescent carvings and pale shine, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, about 4 brick rows across. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  },
+  "TEX_A13": {
+    "src": "/generated-assets/tex_a13.webp",
+    "kind": "image",
+    "label": "Tekstur kulit kayu putih",
+    "recipe": {
+      "prompt": "Terrain fill material for a side-view cartoon platformer: pale white-cream tree bark with soft golden grain lines and tiny star-shaped knots, bold cartoon line work and cel shading like the reference. Usage contract: tiles seamlessly in both directions, flat even lighting, no vignette, medium-small detail. No objects, no text.",
+      "refs": [
+        "https://cdn.playabl.ai/ai-reference-images/6ad084537a2990684763efec/af_1792050351148_9j1eju0.png"
+      ],
+      "playabl": {
+        "tool": "image_gen",
+        "kind": "texture",
+        "size": "1024x1024",
+        "removeBackground": false
+      }
+    }
+  }
+}

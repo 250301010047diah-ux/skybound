@@ -1,0 +1,10 @@
+﻿Aera Skybound Roots — Android
+
+1. Salin Aera-Skybound-Roots.apk ke HP Android.
+2. Buka file APK dan izinkan instalasi dari aplikasi pengirim bila diminta.
+3. Instal lalu buka Aera Skybound Roots.
+
+Game berjalan offline. Progres dan pengaturan disimpan pada perangkat.
+Reset progres tersedia di main menu dan meminta konfirmasi.
+
+APK ini untuk sideload. Untuk distribusi Play Store diperlukan signing release pribadi.

@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "assets": "node prepare_assets.mjs",
+    "build": "node build_runtime.mjs",
+    "test": "node runtime_test.mjs",
+    "audio": "node build_audio.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "playwright-core": "1.58.2",
+    "sharp": "0.35.5",
+    "web-audio-engine": "0.13.4"
+  }
+}
