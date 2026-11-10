@@ -45,3 +45,9 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 /dist/*.apk
+
+# Local Android signing credentials and Gradle/Kotlin cache
+/android/key.properties
+/android/app/*.jks
+/android/app/*.keystore
+/android/.kotlin/

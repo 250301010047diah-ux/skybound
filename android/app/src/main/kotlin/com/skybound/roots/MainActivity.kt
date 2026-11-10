@@ -1,4 +1,4 @@
-package com.example.skybound
+package com.skybound.roots
 
 import io.flutter.embedding.android.FlutterActivity
 
