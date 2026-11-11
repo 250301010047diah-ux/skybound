@@ -11,7 +11,7 @@ class TutorialOverlay extends StatefulWidget {
 
 class _TutorialOverlayState extends State<TutorialOverlay> {
   int page = 0;
-  // icon, accent, title, body, keyboard footnote
+  // icon, accent, title, body, touch tip footnote
   static const steps = [
     (
       Icons.explore_rounded,
@@ -25,14 +25,14 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
       Sky.sky,
       'Bergerak & melompat',
       'Geser joystick kiri untuk bergerak. Geser atas atau bawah untuk memanjat sulur dan berenang. Tombol ↑ untuk lompat, tombol dash untuk melesat.',
-      'Keyboard: A/D atau ←/→ · Spasi lompat · Shift dash',
+      'Tips: tekan lompat dua kali untuk lompat ganda di udara.',
     ),
     (
       Icons.north_east_rounded,
       Sky.amber,
       'Bidik. Tarik. Lepaskan.',
       'Tahan tombol busur hijau, geser ke arah sasaran, lalu lepas untuk menembak. Garis lengkung menunjukkan jalur panah. Ketuk slot panah di atas untuk berganti kemampuan.',
-      'Keyboard: tahan klik atau J/K · Q ganti panah',
+      'Tips: makin lama ditahan, makin jauh panah melesat.',
     ),
     (
       Icons.eco_rounded,

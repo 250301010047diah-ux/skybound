@@ -144,7 +144,7 @@ class SkyboundGame extends FlameGame {
         painter.dispose();
       }
       _runtime.evaluate(
-        'skyboundInit(${jsonEncode({'catalog': metadata, 'tweaks': tweaks, 'saved': saved, 'width': math.max(1, size.x), 'height': math.max(1, size.y), 'metrics': metrics})})',
+        'skyboundInit(${jsonEncode({'catalog': metadata, 'tweaks': tweaks, 'saved': saved, 'cheat': _preferences.getBool('skybound.cheat') ?? false, 'width': math.max(1, size.x), 'height': math.max(1, size.y), 'metrics': metrics})})',
       );
       await _runtime.flush();
       worldData =

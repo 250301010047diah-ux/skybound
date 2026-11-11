@@ -27,7 +27,7 @@ class _MainMenuState extends State<MainMenu>
     vsync: this,
     duration: const Duration(milliseconds: 700),
   );
-  bool playing = false, loaded = false, showGuide = false;
+  bool playing = false, loaded = false, showGuide = false, cheat = false;
   Map<String, dynamic>? saved;
   @override
   void initState() {
@@ -47,9 +47,26 @@ class _MainMenuState extends State<MainMenu>
     }
     if (!mounted || playing) return;
     saved = data;
+    cheat = prefs.getBool('skybound.cheat') ?? false;
     _playMenuMusic();
     _enter.forward(from: 0);
     setState(() => loaded = true);
+  }
+
+  Future<void> _toggleCheat() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('skybound.cheat', !cheat);
+    if (!mounted) return;
+    setState(() => cheat = !cheat);
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+      SnackBar(
+        content: Text(
+          cheat
+              ? 'Koin tak terbatas! Semua jubah & area terbuka.'
+              : 'Cheat dimatikan. Jubah & area kembali mengikuti progres.',
+        ),
+      ),
+    );
   }
 
   void _playMenuMusic() {
@@ -253,6 +270,22 @@ class _MainMenuState extends State<MainMenu>
                               onTap: loaded
                                   ? () => setState(() => playing = true)
                                   : null,
+                            ),
+                          ),
+                          const SizedBox(height: 11),
+                          _enters(
+                            2,
+                            SkyButton(
+                              label: cheat
+                                  ? 'Unlimited koin: AKTIF'
+                                  : 'Unlimited koin & buka semua',
+                              icon: cheat
+                                  ? Icons.lock_open_rounded
+                                  : Icons.monetization_on_rounded,
+                              kind: cheat
+                                  ? SkyButtonKind.primary
+                                  : SkyButtonKind.ghost,
+                              onTap: loaded ? _toggleCheat : null,
                             ),
                           ),
                           const SizedBox(height: 11),

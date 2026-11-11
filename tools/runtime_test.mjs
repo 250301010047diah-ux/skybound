@@ -35,6 +35,8 @@ for(let area=0;area<13;area++){
   const f=frame();assert.equal(f.hud.area,area);assert.equal(f.track,s.ui.boss?4:area<4?1:area<9?2:3);assert(f.commands.length>100);
   for(const c of f.commands){if(c[0]==='drawImage')assert(catalog[c[1]],`Missing image ${c[1]}`);for(const n of c)if(typeof n==='number')assert(Number.isFinite(n));}
 }
+assert.equal(frame({actions:[{type:'skin',id:'rimba'}]}).hud.skin,'aera','locked skin without coins');
+context.skyboundDebug.game.state.pr.coins=1000;
 for(const id of ['aera','rimba','salju','senja','bara','samudra','sakura','bintang','mentari','peri','bayangan']){
   const f=frame({actions:[{type:'skin',id}]});assert.equal(f.hud.skin,id);
 }

@@ -1593,9 +1593,12 @@ class _GameMenuState extends State<GameMenu> {
 
   Widget _areaButton(int index, String name) {
     final current = index == h['area'];
+    final locked = h['cheat'] != true && index > ((h['maxArea'] as num?) ?? 0);
     return GestureDetector(
       onTap: () => game.action('warp', {'area': index}),
-      child: Container(
+      child: Opacity(
+        opacity: locked ? .45 : 1,
+        child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -1612,13 +1615,14 @@ class _GameMenuState extends State<GameMenu> {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Text(
-          '${index + 1}. $name',
+          locked ? '🔒 ${index + 1}. $name' : '${index + 1}. $name',
           style: const TextStyle(
             fontFamily: Sky.display,
             fontSize: 13,
             fontWeight: FontWeight.w700,
             color: Sky.ink,
           ),
+        ),
         ),
       ),
     );
@@ -1683,7 +1687,26 @@ class _GameMenuState extends State<GameMenu> {
     ),
   );
 
-  Widget _skins() => GridView.builder(
+  Widget _skins() => Column(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      Padding(
+        padding: const EdgeInsets.only(bottom: 8),
+        child: Text(
+          h['cheat'] == true ? '🪙 Koin: ∞' : '🪙 Koin: ${h['coins'] ?? 0}',
+          style: const TextStyle(
+            fontFamily: Sky.display,
+            fontSize: 15,
+            fontWeight: FontWeight.w800,
+            color: Sky.ink,
+          ),
+        ),
+      ),
+      Flexible(child: _skinGrid()),
+    ],
+  );
+
+  Widget _skinGrid() => GridView.builder(
     shrinkWrap: true,
     gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
       maxCrossAxisExtent: 120,
@@ -1695,6 +1718,8 @@ class _GameMenuState extends State<GameMenu> {
     itemBuilder: (context, index) {
       final skin = (h['skins'] as List)[index] as Map;
       final chosen = h['skin'] == skin['id'];
+      final owned =
+          h['cheat'] == true || (h['owned'] as Map?)?[skin['id']] == true;
       return GestureDetector(
         onTap: () => game.action('skin', {'id': skin['id']}),
         child: AnimatedContainer(
@@ -1724,13 +1749,16 @@ class _GameMenuState extends State<GameMenu> {
           child: Column(
             children: [
               Expanded(
-                child: SkinPreview(
-                  key: ValueKey(skin['id']),
-                  entry: game.catalog['${skin['prefix']}_BASIC'] as Map,
+                child: Opacity(
+                  opacity: owned ? 1 : .4,
+                  child: SkinPreview(
+                    key: ValueKey(skin['id']),
+                    entry: game.catalog['${skin['prefix']}_BASIC'] as Map,
+                  ),
                 ),
               ),
               Text(
-                skin['name'] as String,
+                owned ? skin['name'] as String : '🔒 🪙${skin['price']}',
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                   fontFamily: Sky.display,

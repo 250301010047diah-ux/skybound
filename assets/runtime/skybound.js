@@ -1,5 +1,5 @@
 (() => {
-  // .dart_tool/skybound_source/game/constants.js
+  // ../.dart_tool/skybound_source/game/constants.js
   var T = 32;
   var COLS = 48;
   var AREA_ROWS = 36;
@@ -52,22 +52,24 @@
     ember: ["PROPS_C", "arrow_ember"]
   };
   var SKINS = [
-    { id: "aera", name: "Aera", prefix: "AERA", col: "#d9542b" },
-    { id: "rimba", name: "Rimba", prefix: "SKIN_RIMBA", col: "#3f7a1c" },
-    { id: "salju", name: "Salju", prefix: "SKIN_SALJU", col: "#bfe4ff" },
-    { id: "senja", name: "Senja", prefix: "SKIN_SENJA", col: "#7a4bb3" },
-    { id: "bara", name: "Bara", prefix: "SKIN_BARA", col: "#b3261e" },
-    { id: "samudra", name: "Samudra", prefix: "SKIN_SAMUDRA", col: "#1f9aa0" },
-    { id: "sakura", name: "Sakura", prefix: "SKIN_SAKURA", col: "#f2a2c0" },
-    { id: "bintang", name: "Malam Bintang", prefix: "SKIN_BINTANG", col: "#1f2f6b" },
-    { id: "mentari", name: "Mentari", prefix: "SKIN_MENTARI", col: "#f2c230" },
-    { id: "peri", name: "Peri Jamur", prefix: "SKIN_PERI", col: "#d33b2c" },
-    { id: "bayangan", name: "Bayangan", prefix: "SKIN_BAYANGAN", col: "#2b3440" }
+    { id: "aera", price: 0, name: "Aera", prefix: "AERA", col: "#d9542b" },
+    { id: "rimba", price: 20, name: "Rimba", prefix: "SKIN_RIMBA", col: "#3f7a1c" },
+    { id: "salju", price: 30, name: "Salju", prefix: "SKIN_SALJU", col: "#bfe4ff" },
+    { id: "senja", price: 40, name: "Senja", prefix: "SKIN_SENJA", col: "#7a4bb3" },
+    { id: "bara", price: 50, name: "Bara", prefix: "SKIN_BARA", col: "#b3261e" },
+    { id: "samudra", price: 60, name: "Samudra", prefix: "SKIN_SAMUDRA", col: "#1f9aa0" },
+    { id: "sakura", price: 75, name: "Sakura", prefix: "SKIN_SAKURA", col: "#f2a2c0" },
+    { id: "bintang", price: 90, name: "Malam Bintang", prefix: "SKIN_BINTANG", col: "#1f2f6b" },
+    { id: "mentari", price: 105, name: "Mentari", prefix: "SKIN_MENTARI", col: "#f2c230" },
+    { id: "peri", price: 120, name: "Peri Jamur", prefix: "SKIN_PERI", col: "#d33b2c" },
+    { id: "bayangan", price: 150, name: "Bayangan", prefix: "SKIN_BAYANGAN", col: "#2b3440" }
   ];
   var SKIN_PARTS = ["BASIC", "AIR", "ACTION", "CLIMB", "BOW", "MISC"];
+  var COIN_ENEMY = 2;
+  var COIN_BOSS = 20;
   var skinById = (id) => SKINS.find((k) => k.id === id) || SKINS[0];
 
-  // .dart_tool/skybound_source/game/world.js
+  // ../.dart_tool/skybound_source/game/world.js
   var S = TILE.SOLID;
   var F = TILE.FERTILE;
   var O = TILE.ONEWAY;
@@ -718,7 +720,7 @@
   }
   var isSolidAt = (x, y) => isSolid(Math.floor(x / T), Math.floor(y / T));
 
-  // .dart_tool/skybound_source/game/sprites.js
+  // ../.dart_tool/skybound_source/game/sprites.js
   var CORE_KEYS = [
     "PROPS_A",
     "PROPS_B",
@@ -797,7 +799,7 @@
     ctx.restore();
   }
 
-  // .dart_tool/skybound_source/adapters.js
+  // ../.dart_tool/skybound_source/adapters.js
   function createInput() {
     const i = { keys: {}, stickX: 0, stickY: 0, jumpHeld: false, aim: { active: false, source: null, dx: 0, dy: 0, mx: 0, my: 0 }, actions: [], touchUsed: true };
     i.axisX = () => (i.keys.right ? 1 : 0) - (i.keys.left ? 1 : 0) || i.stickX;
@@ -892,7 +894,7 @@
     return hud;
   }
 
-  // .dart_tool/skybound_source/game/physics.js
+  // ../.dart_tool/skybound_source/game/physics.js
   var EPS = 0.01;
   function overlapsSolid(x, y, w, h) {
     const x0 = Math.floor((x - w / 2) / T);
@@ -999,7 +1001,7 @@
     return { ground: false, plat: null };
   }
 
-  // .dart_tool/skybound_source/game/combat.js
+  // ../.dart_tool/skybound_source/game/combat.js
   var ARROW_G = 320;
   var ARROW_TRAIL = 13;
   var hop = (sheet, o = {}) => ({ sheet, move: "slime", attack: "slime_attack", ai: "slime", w: 26, h: 22, hp: 2, vis: 30, ...o });
@@ -1402,6 +1404,7 @@
       G.fx("FX_B", "poof", e.x, e.y + 6, 0.5, Math.max(40, e.h * 1.8));
       G.sfx("poof");
       G.s.player.energy = Math.min(100, G.s.player.energy + 15);
+      if (e.kind !== "slimeSmall" || G.rand() < 0.5) G.s.pr.coins = (G.s.pr.coins || 0) + COIN_ENEMY;
       if (e.kind === "slime")
         for (const dx of [-14, 14]) {
           const k = makeEnemy(G, "slimeSmall", e.x + dx, e.y, G.uid("e"));
@@ -1959,7 +1962,7 @@
     }
   }
 
-  // .dart_tool/skybound_source/game/puzzles2.js
+  // ../.dart_tool/skybound_source/game/puzzles2.js
   var near = (ax, ay, bx, by, r) => Math.hypot(ax - bx, ay - by) < r;
   var edgeKey = (a, b2) => a < b2 ? `${a}|${b2}` : `${b2}|${a}`;
   var FAN_DIRS = ["up", "right", "left"];
@@ -2519,7 +2522,7 @@
     }
   }
 
-  // .dart_tool/skybound_source/game/render2.js
+  // ../.dart_tool/skybound_source/game/render2.js
   var TEMP_COL = ["#6fc3ff", "#8fe36a", "#ff6a3c"];
   function drawLight(ctx, s, t) {
     if (!s.light?.segs.length) return;
@@ -2857,7 +2860,7 @@
     return inView(h.x, h.y, 1100);
   }
 
-  // .dart_tool/skybound_source/game/player.js
+  // ../.dart_tool/skybound_source/game/player.js
   var approach = (v, t, d) => v < t ? Math.min(t, v + d) : Math.max(t, v - d);
   function newPlayer(x, y, maxHp, focusMax) {
     return {
@@ -3273,7 +3276,7 @@
     p.onGround = false;
   }
 
-  // .dart_tool/skybound_source/game/story.js
+  // ../.dart_tool/skybound_source/game/story.js
   var NPC_NAMES = {
     bird: "Burung Pemandu",
     lumi: "Tetua Lumi",
@@ -3497,7 +3500,7 @@
     }
   }
 
-  // .dart_tool/skybound_source/game/puzzles.js
+  // ../.dart_tool/skybound_source/game/puzzles.js
   var dist = (ax, ay, bx, by) => Math.hypot(ax - bx, ay - by);
   function gardenWet(pr, id) {
     const ch = ofType("channel").find((c) => c.garden === id);
@@ -4150,7 +4153,7 @@
     return null;
   }
 
-  // .dart_tool/skybound_source/game/render.js
+  // ../.dart_tool/skybound_source/game/render.js
   var look = (moss, mossDark, base) => ({ moss, mossDark, line: "#2a170b", base });
   var AREA_LOOK = [
     look("#79b83a", "#3f7a1c", "#6b4528"),
@@ -5523,7 +5526,7 @@
     return { canvas, ctx, view, resize, draw };
   }
 
-  // .dart_tool/skybound_source/game/game.js
+  // ../.dart_tool/skybound_source/game/game.js
   var CHUNK_COLS = Math.ceil(COLS / 4);
   var CHUNK_COUNT = CHUNK_COLS * Math.ceil(ROWS / 4);
   var SAVE_VERSION = 1;
@@ -5559,6 +5562,9 @@
       podDone: false,
       chests: {},
       skin: "aera",
+      coins: 0,
+      owned: { aera: true },
+      maxArea: 0,
       explored: "0".repeat(CHUNK_COUNT),
       time: 0,
       finished: false,
@@ -5575,10 +5581,12 @@
     }
     if (typeof base.explored !== "string" || base.explored.length !== CHUNK_COUNT) base.explored = "0".repeat(CHUNK_COUNT);
     for (const k of ["A", "B", "C"]) if (!Array.isArray(base.baskets[k])) base.baskets[k] = [];
+    for (const id of Object.keys(base.cps)) if (byId[id]) base.maxArea = Math.max(base.maxArea, byId[id].area);
+    if (!base.owned[base.skin]) base.skin = "aera";
     return base;
   }
-  function createGame({ mount, sdk, tweaks, assets, saved }) {
-    const state = {};
+  function createGame({ mount, sdk, tweaks, assets, saved, cheat }) {
+    const state = { cheat: !!cheat };
     const hud = createHud(mount);
     const inp = createInput(hud.root);
     inp.actions = [];
@@ -5882,6 +5890,7 @@
     function bossDefeated(b2) {
       const pr = state.pr;
       pr.bosses[b2.id] = true;
+      pr.coins = (pr.coins || 0) + COIN_BOSS;
       b2.gone = true;
       state.ui.boss = null;
       G.fx("FX_B", "poof", b2.x, b2.y, 0.7, 120);
@@ -5990,6 +5999,15 @@
           audio.setLocal(state.pr.settings);
           G.save();
         } else if (a.type === "warp") {
+          if (!state.cheat && a.area > state.pr.maxArea) {
+            G.toast("Area terkunci \u2014 selesaikan area sebelumnya dulu.");
+            G.sfx("deny");
+            continue;
+          }
+          if (state.cheat && a.area > state.pr.maxArea) {
+            for (const k of ["sprout", "thread", "echo", "wind", "ember"]) state.pr.abilities[k] = true;
+            state.pr.maxArea = a.area;
+          }
           state.ui.menu = null;
           if (!state.ui.boss && state.player) {
             if (state.player.carry) G.dropCarry();
@@ -6013,9 +6031,21 @@
           G.fx("FX_B", "sparkle", p.x, p.y - 10, 0.6, 60);
           G.sfx("swish");
         } else if (a.type === "skin") {
-          state.pr.skin = a.id;
-          store.prefetch(skinKeys(a.id));
-          G.sfx("click");
+          const pr = state.pr;
+          const k = skinById(a.id);
+          if (!state.cheat && !pr.owned[k.id]) {
+            if ((pr.coins || 0) < k.price) {
+              G.toast(`Koin kurang \u2014 butuh ${k.price} koin.`);
+              G.sfx("deny");
+              continue;
+            }
+            pr.coins -= k.price;
+            pr.owned[k.id] = true;
+            G.toast(`Jubah ${k.name} dibeli!`);
+            G.sfx("pickup");
+          } else G.sfx("click");
+          pr.skin = k.id;
+          store.prefetch(skinKeys(k.id));
           G.save();
         } else if (a.type === "afterEnding") {
           state.ui.menu = null;
@@ -6049,6 +6079,7 @@
     const hooks = {
       init(s) {
         for (const k of Object.keys(s)) delete s[k];
+        s.cheat = !!cheat;
         const snap = snapshot;
         s.pr = restoreProgress(snap?.pr);
         setBlocks(s.pr);
@@ -6073,7 +6104,7 @@
         spawnEnemies(G);
         audio.setLocal(s.pr.settings);
         if (!snap)
-          G.toast(coarse ? "Geser joystick untuk bergerak. Tahan busur lalu geser untuk membidik." : "A/D bergerak \xB7 Spasi lompat \xB7 Shift dash \xB7 tahan klik untuk membidik", 6);
+          G.toast("Geser joystick untuk bergerak. Tahan busur lalu geser untuk membidik.", 6);
       },
       update(s, dt) {
         if (!sprites) return;
@@ -6123,6 +6154,7 @@
         const area = areaOfY(s.player.y - 10);
         if (area !== s.area) {
           s.area = area;
+          if (area > s.pr.maxArea) s.pr.maxArea = area;
           const tag = AREA_TAG[AREA_KIND[area]];
           G.banner(tag ? `${AREA_NAMES[area]} \xB7 ${tag}` : AREA_NAMES[area], 2.8);
         }
@@ -6348,7 +6380,7 @@
     };
   }
 
-  // .dart_tool/skybound_source/entry.js
+  // ../.dart_tool/skybound_source/entry.js
   var b = globalThis.__bridge = { width: 960, height: 540, commands: [], sounds: [], track: -1, settings: {}, pendingSave: null };
   var props = { fillStyle: "#000000", strokeStyle: "#000000", lineWidth: 1, globalAlpha: 1, globalCompositeOperation: "source-over", lineCap: "butt", lineJoin: "miter", lineDashOffset: 0, font: "10px sans-serif", textAlign: "start", textBaseline: "alphabetic" };
   var states = [];
@@ -6442,14 +6474,14 @@
     } }, device: { haptics: { isSupported: () => true, vibrate() {
       b.haptic = true;
     } } } };
-    game = createGame({ mount: element(), sdk, tweaks: { get: (k) => config.tweaks[k]?.value ?? config.tweaks[k] }, saved: config.saved });
+    game = createGame({ mount: element(), sdk, tweaks: { get: (k) => config.tweaks[k]?.value ?? config.tweaks[k] }, saved: config.saved, cheat: !!config.cheat });
     game.hooks.init(game.state);
     game.setRun({ restart: () => game.hooks.init(game.state), frozen: false });
     return true;
   };
   function hudState() {
     const s = game.state, p = s.player, pr = s.pr, u = s.ui, info = b.info || {}, boss = u.boss ? s.bosses[u.boss] : null;
-    return { hp: p.hp, maxHp: p.maxHp, energy: p.energy, focus: p.focus, focusMax: p.focusMax, arrow: p.arrowType, arrowName: ARROW_NAME[p.arrowType], arrowColor: ARROW_COLOR[p.arrowType], area: s.area, areaName: AREA_NAMES[s.area], banner: u.banner?.text ?? "", toast: u.toast?.text ?? "", dialog: u.dialog, menu: u.menu, boss: boss ? { name: info.bossName, hp: boss.hp, max: boss.max } : null, interact: info.interact?.label ?? "", skin: pr.skin, settings: pr.settings, slowmo: s.slowmo, seeds: pr.seeds, feathers: pr.feathers || 0, seedTotal: info.seedTotal, featherTotal: info.featherTotal, time: pr.time, hintTier: u.hintTier, hints: objective(pr, s.area), skins: SKINS, areas: AREA_NAMES, travel: defs.filter((d) => d.type === "nest" && pr.nests[d.id] && d.id !== u.travelFrom).map((d) => ({ id: d.id, name: AREA_NAMES[d.area] })), map: u.menu === "pause" ? { explored: pr.explored, player: { x: p.x, y: p.y }, cps: pr.cps, nests: pr.nests, gates: pr.gates } : null };
+    return { hp: p.hp, maxHp: p.maxHp, energy: p.energy, focus: p.focus, focusMax: p.focusMax, arrow: p.arrowType, arrowName: ARROW_NAME[p.arrowType], arrowColor: ARROW_COLOR[p.arrowType], area: s.area, areaName: AREA_NAMES[s.area], banner: u.banner?.text ?? "", toast: u.toast?.text ?? "", dialog: u.dialog, menu: u.menu, boss: boss ? { name: info.bossName, hp: boss.hp, max: boss.max } : null, interact: info.interact?.label ?? "", skin: pr.skin, coins: pr.coins || 0, owned: pr.owned, maxArea: pr.maxArea || 0, cheat: !!s.cheat, settings: pr.settings, slowmo: s.slowmo, seeds: pr.seeds, feathers: pr.feathers || 0, seedTotal: info.seedTotal, featherTotal: info.featherTotal, time: pr.time, hintTier: u.hintTier, hints: objective(pr, s.area), skins: SKINS, areas: AREA_NAMES, travel: defs.filter((d) => d.type === "nest" && pr.nests[d.id] && d.id !== u.travelFrom).map((d) => ({ id: d.id, name: AREA_NAMES[d.area] })), map: u.menu === "pause" ? { explored: pr.explored, player: { x: p.x, y: p.y }, cps: pr.cps, nests: pr.nests, gates: pr.gates } : null };
   }
   globalThis.skyboundFrame = (input, dt, width, height) => {
     if (width !== b.width || height !== b.height) {
